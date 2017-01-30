@@ -87,7 +87,9 @@
             </div>
         </div>
     </nav>
-
+    <!--modal code goes at top of page si that subsequent changes in the web page will not affect the modal
+    behavior in any way-->
+    
     <header class="jumbotron">
 
         <!-- Main component for a primary marketing message or call to action -->
@@ -105,7 +107,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;"></p>
-                    <a href="#reserveForm"><button class="btn btn-warning" type="submit">Reserve Table</button></a>
+                    <a href="#reserveForm"><button class="btn btn-warning" data-toggle="tooltip" title="Or Call us at +852 12345678" data-placement="bottom" type="submit">Reserve Table</button></a>
                 </div>
             </div>
         </div>
@@ -277,9 +279,16 @@
         </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    //TootTip JavaSCript
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
 </body>
 
