@@ -61,7 +61,7 @@
                     <li><a href="../conFusion/contactus.html"><span class="fa fa-envelope-o"></span> Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="modal" data-target="#loginModal">
+                    <li><a id="loginButton">
                     <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;"></p>
-                    <a href="#reserveForm"><span data-toggle="tooltip" title="Or Call us at +852 12345678" data-placement="bottom"><button data-toggle="modal" data-target="#reserveTable" class="btn btn-warning" type="submit">Reserve Table</button></span></a>
+                    <a href="#reserveForm"><span data-toggle="tooltip" title="Or Call us at +852 12345678" data-placement="bottom"><button id="reservetableButton" class="btn btn-warning" type="submit">Reserve Table</button></span></a>
                 </div>
             </div>
         </div>
@@ -319,11 +319,14 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-    //datepicker timepicker bootstrap
-    <script type="text/javascript">
-            $(function () {
-                $('#datePicker').datetimePicker();
-            });
+<!--JS CODE FOR MODAL BUTTONS-->
+    <script>
+        $('#reservetableButton').click(function(){
+            $('#reserveTable').modal('show');
+        });
+        $('#loginButton').click(function(){
+            $('#loginModal').modal('show');
+        });
     </script>
 
 </body>
