@@ -132,6 +132,32 @@
                             </span>
                         </div>
                     </div>
+
+
+                    <div class="control-group">
+                        <label for="date-picker-2" class="control-label">B</label>
+                        <div class="controls">
+                            <div class="input-group">
+                                <input id="date-picker-2" type="text" class="date-picker form-control" />
+                                <label for="date-picker-2" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="form-group">
                         <div class='input-group date' id='timePicker'>
                             <input type='text' class="form-control">
@@ -156,8 +182,8 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     </div>
                 </form>
-                <div class="alert alert-warning alert-dismissible  show" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <div id="toggleDiv" data-toggle="tooltip" title="Call us at +852 12345678" data-placement="bottom" class="alert alert-warning alert-dismissible  show" role="alert">
+                    <button id="callButton" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                     <strong>Warning:</strong> Please <strong>call</strong> to reserve for more than six guests.
@@ -186,7 +212,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;"></p>
-                    <a href="#reserveForm"><span data-toggle="tooltip" title="Or Call us at +852 12345678" data-placement="bottom"><button id="reservetableButton" class="btn btn-warning" type="submit">Reserve Table</button></span></a>
+                    <button id="reservetableButton" class="btn btn-warning" type="submit">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -318,8 +344,11 @@
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
+        $('#callButton').click(function () {
+            $('#toggleDiv').tooltip('hide');
+        })
     </script>
-<!--JS CODE FOR MODAL BUTTONS-->
+    //Modal Buttons JavaScript
     <script>
         $('#reservetableButton').click(function(){
             $('#reserveTable').modal('show');
@@ -328,7 +357,12 @@
             $('#loginModal').modal('show');
         });
     </script>
-
+    //Date & Time Picker JavaScript
+    <script>
+        $('#datePicker').click(function () {
+            $('.dat')
+        })
+    </script>
 </body>
 
 </html>
