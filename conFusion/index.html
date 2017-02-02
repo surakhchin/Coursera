@@ -15,14 +15,14 @@
     <link href="css/mystyles.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <![endif]-->
+
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
 </head>
 
 <body>
@@ -124,48 +124,30 @@
                         <label><input type="radio" name="1"> 5</label>
                         <label><input type="radio" name="1"> 6</label>
                     </div>
-                    <div class="form-group">
-                        <div class='input-group date' id='datePicker'>
-                            <input type='text' class="form-control">
-                            <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                    </div>
 
 
-                    <div class="control-group">
-                        <label for="date-picker-2" class="control-label">B</label>
+                    <div class="control-group date" style="padding: 10px;">
+                        <label class="control-label">Select Date</label>
                         <div class="controls">
                             <div class="input-group">
-                                <input id="date-picker-2" type="text" class="date-picker form-control" />
-                                <label for="date-picker-2" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span>
+                                <input id="datePicker" type="text" class="form-control-static">
+                                <label class="input-group-addon btn"><span id="dateButton" class="glyphicon glyphicon-calendar"></span>
                                 </label>
                             </div>
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="form-group">
-                        <div class='input-group date' id='timePicker'>
-                            <input type='text' class="form-control">
-                            <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                            </span>
+                    <div class="control-group" style="padding: 10px;">
+                        <label for="timePicker" class="control-label">Select Time</label>
+                        <div class="controls">
+                            <div class="input-group">
+                                <input id="timePicker" type="time" class="form-control-static" />
+                                <label for="timePicker" class="input-group-addon btn"><span class="glyphicon glyphicon-time"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
+
                     <div style="padding: 20px">
                         <label><strong>Section</strong></label>
                         <div class="btn-group" data-toggle="buttons">
@@ -336,7 +318,7 @@
         </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     //TootTip JavaSCript
@@ -358,11 +340,10 @@
         });
     </script>
     //Date & Time Picker JavaScript
-    <script>
-        $('#datePicker').click(function () {
-            $('.dat')
-        })
+    <script type="text/javascript">
+        $('#datePicker').datepicker();
     </script>
+
 </body>
 
 </html>
