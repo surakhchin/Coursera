@@ -1,16 +1,19 @@
 {
   "name": "conFusion",
-  "homepage": "https://github.com/surakhchin/Coursera",
-  "authors": [
-    "Serge <urakhchin@gmail.com>"
-  ],
-  "description": "First Web App",
+  "version": "1.0.0",
+  "description": "Website for an awesome restaurant",
   "main": "index.html",
+  "moduleType": [],
   "keywords": [
-    "conFusion"
+    "conFusion",
+    "Fusion",
+    "Restaurant"
+  ],
+  "authors": [
+    "Jogesh Muppala"
   ],
   "license": "MIT",
-  "private": true,
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -19,7 +22,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7"
   }
 }
