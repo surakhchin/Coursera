@@ -24,9 +24,11 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="105" column="87" selection-start-line="105" selection-start-column="87" selection-end-line="105" selection-end-column="87" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+              <folding>
+                <marker date="1486583309379" expanded="true" signature="3877:4082" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,9 +44,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/aboutus.html" />
         <option value="$PROJECT_DIR$/contactus.html" />
-        <option value="$PROJECT_DIR$/../conFusionOld/aboutus.html" />
         <option value="$PROJECT_DIR$/../conFusionOld/index.html" />
         <option value="$PROJECT_DIR$/../conFusionOld/contactus.html" />
+        <option value="$PROJECT_DIR$/../conFusionOld/aboutus.html" />
         <option value="$PROJECT_DIR$/app/menu.html" />
       </list>
     </option>
@@ -56,9 +58,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="527" />
+    <option name="x" value="787" />
+    <option name="width" value="1140" />
+    <option name="height" value="542" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -93,7 +95,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../conFusionOld/aboutus.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -337,7 +339,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="527" extended-state="0" />
+    <frame x="787" y="0" width="1140" height="542" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23960613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -581,14 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../conFusionOld/aboutus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="69" column="0" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -605,11 +599,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../conFusionOld/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="146" column="66" selection-start-line="146" selection-start-column="52" selection-end-line="146" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="105" column="87" selection-start-line="105" selection-start-column="87" selection-end-line="105" selection-end-column="87" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+          <folding>
+            <marker date="1486583309379" expanded="true" signature="3877:4082" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
