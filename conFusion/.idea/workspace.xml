@@ -21,14 +21,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+            <state relative-caret-position="532">
+              <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="31" />
               <folding>
                 <marker date="1486583309379" expanded="true" signature="3877:4082" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dishdetail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/dishdetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aboutus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../conFusionOld/aboutus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="116" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,6 +68,8 @@
         <option value="$PROJECT_DIR$/../conFusionOld/contactus.html" />
         <option value="$PROJECT_DIR$/../conFusionOld/aboutus.html" />
         <option value="$PROJECT_DIR$/app/menu.html" />
+        <option value="$PROJECT_DIR$/../../Test/app/index.html" />
+        <option value="$PROJECT_DIR$/app/dishdetail.html" />
       </list>
     </option>
   </component>
@@ -58,9 +80,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="787" />
-    <option name="width" value="1140" />
-    <option name="height" value="542" />
+    <option name="x" value="952" />
+    <option name="width" value="975" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -339,7 +361,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="787" y="0" width="1140" height="542" extended-state="0" />
+    <frame x="952" y="0" width="975" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23960613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -599,21 +621,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../Test/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../conFusionOld/aboutus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="146" column="66" selection-start-line="146" selection-start-column="52" selection-end-line="146" selection-end-column="66" />
+        <state relative-caret-position="277">
+          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="116" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+        <state relative-caret-position="532">
+          <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="31" />
           <folding>
             <marker date="1486583309379" expanded="true" signature="3877:4082" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dishdetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
