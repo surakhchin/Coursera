@@ -11,13 +11,7 @@ store data inside this module-->
          content must come *after* these tags -->
     <title>Ristorante Con Fusion: Menu</title>
         <!-- Bootstrap -->
-    <!-- build:css styles/main.css -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="styles/bootstrap-social.css" rel="stylesheet">
-    <link href="styles/mystyles.css" rel="stylesheet">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/main-6955cb7e84.css"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,31 +26,28 @@ store data inside this module-->
         <!--   HERE WE CHANGE NG-INIT INTO AN ARRAY OF JAVASCRIPT OBJECTS, an array of 4 different dishes to create
         a menu list-->
         <!--ATTACHING THE CONTROLLER: We delete ng-repeat and replace it with ng-controller. -->
-        <div class="row row-content" ng-controller="MenuController">
+        <div class="row row-content" ng-controller="menuController as menuCtrl">
             <div class="col-xs-12">
-               <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
-                     {{showDetails ? 'Hide Details':'Show Details'}}
-               </button>
                <ul class="nav nav-tabs" role="tablist">
                    <!--ng-click will fire up the menuCtrl select function with given parameter -->
                     <li role="presentation"
-                     ng-class="{active:isSelected(1)}">
-                    <a ng-click="select(1)"
+                     ng-class="{active:menuCtrl.isSelected(1)}">
+                    <a ng-click="menuCtrl.select(1)"
                      aria-controls="all menu"
                      role="tab">The Menu</a></li>
                     <li role="presentation"
-                     ng-class="{active:isSelected(2)}">
-                    <a ng-click="select(2)"
+                     ng-class="{active:menuCtrl.isSelected(2)}">
+                    <a ng-click="menuCtrl.select(2)"
                      aria-controls="appetizers"
                      role="tab">Appetizers</a></li>
                     <li role="presentation"
-                     ng-class="{active:isSelected(3)}">
-                    <a ng-click="select(3)"
+                     ng-class="{active:menuCtrl.isSelected(3)}">
+                    <a ng-click="menuCtrl.select(3)"
                      aria-controls="mains"
                      role="tab">Mains</a></li>
                     <li role="presentation"
-                     ng-class="{active:isSelected(4)}">
-                    <a  ng-click="select(4)"
+                     ng-class="{active:menuCtrl.isSelected(4)}">
+                    <a  ng-click="menuCtrl.select(4)"
                      aria-controls="desserts"
                      role="tab">Desserts</a></li>
                 </ul>
@@ -64,7 +55,7 @@ store data inside this module-->
                <div class="tab-content">
                    <ul class="media-list">
                        <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
-                    <li class="media" ng-repeat="dish in dishes | filter:filtText">
+                    <li class="media" ng-repeat="dish in menuCtrl.dishes | filter:menuCtrl.filtText">
                         <div class="media-left media-middle">
                             <a href="#">
                             <img class="media-object img-thumbnail"
@@ -75,7 +66,7 @@ store data inside this module-->
                             <h2 class="media-heading">{{dish.name}}
                              <span class="label label-danger">{{dish.label}}</span>
                              <span class="badge">{{dish.price | currency}}</span></h2>
-                            <p ng-show="showDetails">{{dish.description}}</p>
+                            <p>{{dish.description}}</p>
                             <!--<p>Comment: {{dish.comment}}</p>-->
                             <!--<p>Type your comment:-->
                              <!--<input type="text" ng-model="dish.comment"></p>-->
@@ -84,13 +75,11 @@ store data inside this module-->
                 </ul>
             </div>
             </div>
+
         </div>
     </div>
     <!--Angular JavaScript Files-->
-    <!-- build:js scripts/main.js-->
-    <script src="../bower_components/angular/angular.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <!-- endbuild -->
+    <script src="scripts/main-ad5ebe56f3.js"></script>
 </body>
 
 </html>
