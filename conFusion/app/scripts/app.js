@@ -79,15 +79,18 @@
         }])
 
         .controller('ContactController', ['$scope', function($scope) {
-            $scope.feedback = {mychannel:"", firstName:"", lastName:"", agree:false, email:"" };
-            var channels = [{value:"tel", label:"Tel."},
-                            {value:"Email",label:"Email"}];
-            $scope.channels = channels;
-            $scope.invalidChannelSelection = false;
+            $scope.feedback = {mychannel:"",
+                              firstName:"",
+                              lastName:"",
+                              agree:false,
+                              email:""};//javascript object
+            $scope.channels = [{value:"tel",  label:"Tel."},
+                               {value:"Email",label:"Email"}]; //Javascript Object Array used to store into javascript object my channel variable
+            $scope.invalidChannelSelection = false; //Javascript boolean
         }])
 
         .controller('FeedbackController', ['$scope', function($scope) {
-            $scope.sendFeedback = function() {
+            $scope.sendFeedback = function() { //Javascript Function
                 console.log($scope.feedback);
 
                 if ($scope.feedback.agree && ($scope.feedback.mychannel == "")&& !$scope.feedback.mychannel) {
@@ -96,11 +99,14 @@
                 }
                 else {
                     $scope.invalidChannelSelection = false;
-                    $scope.feedback = {mychannel:"", firstName:"", lastName:"",
-                                       agree:false, email:"" };
+                    $scope.feedback = {mychannel:"",
+                                       firstName:"",
+                                       lastName:"",
+                                       agree:false,
+                                       email:"" };
                     $scope.feedback.mychannel="";
-
-                    $scope.feedbackForm.$setPristine();
+                    console.log($scope.feedback);
+                    $scope.feedbackForm.$setPristine(); //$setPristine is angular way of reseting form, you can do it manually resetting .feedback values
                     console.log($scope.feedback);
                 }
             };
