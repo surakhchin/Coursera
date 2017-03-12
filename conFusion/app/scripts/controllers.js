@@ -87,11 +87,11 @@ angular.module('confusionApp')
         };
     }])
     //NEED DEPENDENCY INJECTION TO USE DISH OBJECT STORED IN SERVICES.JS
-    .controller('DishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
+    .controller('DishDetailController', ['$scope','$routeParams','menuFactory', function($scope, $routeParams, menuFactory) {
 
         //DISH OBJECT GOES HERE FROM CUT TO SERVICES.JS
         //REPLACE THE DISH OBJECT VARIABLE WITH A CALL TO THE DISH OBJECT FROM DISH FACTORY IN SERVICES.JS
-        var dish = menuFactory.getDish(3);
+        var dish = menuFactory.getDish(parseInt($routeParams.id,10));
 
         $scope.dish = dish;
 
