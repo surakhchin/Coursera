@@ -87,11 +87,14 @@ angular.module('confusionApp')
         };
     }])
     //NEED DEPENDENCY INJECTION TO USE DISH OBJECT STORED IN SERVICES.JS
-    .controller('DishDetailController', ['$scope','$routeParams','menuFactory', function($scope, $routeParams, menuFactory) {
-
+    .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
+        //------first comments------
         //DISH OBJECT GOES HERE FROM CUT TO SERVICES.JS
         //REPLACE THE DISH OBJECT VARIABLE WITH A CALL TO THE DISH OBJECT FROM DISH FACTORY IN SERVICES.JS
-        var dish = menuFactory.getDish(parseInt($routeParams.id,10));
+        //------second comments------
+        // Angular UI-Router modification of code from ngRoute approach. Here we use stateParams insead of routeParams, we link these params in menu.html code to an image <a> tag with an ui-sref attribute.
+
+        var dish= menuFactory.getDish(parseInt($stateParams.id,10));
 
         $scope.dish = dish;
 
