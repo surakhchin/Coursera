@@ -110,9 +110,25 @@ angular.module('confusionApp')
 
         }])
 
-        .controller('AboutController', ['$scope', 'corporateFactory', function($scope, corporateFactory) {
+        .controller('AboutController', ['$scope', 'corporateFactory', '$window', function($scope, corporateFactory, $window) {
 
             $scope.leadership= corporateFactory.getLeaders();
+
+            $scope.class = "dl-horizontal";
+            $scope.number = $window.innerWidth;
+
+            $scope.changeClass = function () {
+
+                if ($scope.number < 992) {
+                    $scope.class = "dl-vertical";
+                    return $scope.class;
+                }
+                else {
+                    $scope.class = "dl-horizontal";
+                    return $scope.class;
+                }
+            }
+            $scope.changeClass();
 
         }])
 

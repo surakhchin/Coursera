@@ -9,28 +9,20 @@
                <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
                      {{showDetails ? 'Hide Details':'Show Details'}}
                </button>
-               <ul class="nav nav-tabs" role="tablist">
+               <ul class="nav nav-tabs">
                    <!--ng-click will fire up the menuCtrl select function with given parameter -->
-                    <li role="presentation"
-                     ng-class="{active:isSelected(1)}">
+                    <li ng-class="{active:isSelected(1)}">
                     <a ng-click="select(1)"
-                     aria-controls="all menu"
-                     role="tab">The Menu</a></li>
-                    <li role="presentation"
-                     ng-class="{active:isSelected(2)}">
+                    >The Menu</a></li>
+                    <li ng-class="{active:isSelected(2)}">
                     <a ng-click="select(2)"
-                     aria-controls="appetizers"
-                     role="tab">Appetizers</a></li>
-                    <li role="presentation"
-                     ng-class="{active:isSelected(3)}">
+                    >Appetizers</a></li>
+                    <li ng-class="{active:isSelected(3)}">
                     <a ng-click="select(3)"
-                     aria-controls="mains"
-                     role="tab">Mains</a></li>
-                    <li role="presentation"
-                     ng-class="{active:isSelected(4)}">
-                    <a  ng-click="select(4)"
-                     aria-controls="desserts"
-                     role="tab">Desserts</a></li>
+                    >Mains</a></li>
+                    <li ng-class="{active:isSelected(4)}">
+                    <a ng-click="select(4)"
+                    >Desserts</a></li>
                </ul>
 
                <div class="tab-content">
@@ -38,7 +30,7 @@
                        <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
                        <!--We changed ng-href to ui-sref to change the nested state app.dishdetails via UI-Router-->
                         <li class="media" ng-repeat="dish in dishes | filter:filtText">
-                            <div class="media-left media-middle">
+                            <div class="media-left">
                                 <a ui-sref="app.dishdetails({id: dish._id})">
                                 <img class="media-object img-thumbnail"
                                  ng-src={{dish.image}} alt="Uthappizza">
