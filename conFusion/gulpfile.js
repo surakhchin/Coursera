@@ -12,8 +12,7 @@ var gulp = require('gulp'),
     changed = require('gulp-changed'),
     rev = require('gulp-rev'),
     browserSync = require('browser-sync'),
-    del = require('del'),
-    ngannotate = require('gulp-ng-annotate');
+    del = require('del');
 
 gulp.task('jshint', function() {
   return gulp.src('app/scripts/**/*.js')
@@ -35,7 +34,7 @@ gulp.task('usemin',['jshint'], function () {
   return gulp.src('./app/**/*.html')
       .pipe(usemin({
         css:[minifycss(),rev()],
-        js: [ngannotate(),uglify(),rev()]
+        js: [uglify(),rev()]
       }))
       .pipe(gulp.dest('dist/'));
 });
@@ -82,4 +81,3 @@ gulp.task('browser-sync', ['default'], function () {
         // Watch any files in dist/, reload on change
   gulp.watch(['dist/**']).on('change', browserSync.reload);
     });
-
