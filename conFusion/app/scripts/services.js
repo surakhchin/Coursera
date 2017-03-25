@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('confusionApp')
-
-
         .constant("baseURL","http://localhost:3000/")
-        .service('menuFactory', ['$resource', 'baseURL', function($resource,baseURL) {
+        .service('menuFactory', ['$resource', 'baseURL', function($resource, baseURL) {
     
 
             var promotions = [
@@ -23,19 +21,13 @@ angular.module('confusionApp')
                                         return $resource(baseURL+"dishes/:id",null,  {'update':{method:'PUT' }});
                                     };
 
-            // this.getDish = function (index) {
-            //
-            //                         return $http.get(baseURL+"dishes/"+index);
-            //
-            // };
-
             // implement a function named getPromotion
             // that returns a selected promotion.
             this.getPromotion = function (index) {
 
                 return promotions[index];
             };
-                        
+
         }])
 
         .factory('corporateFactory', function() {
