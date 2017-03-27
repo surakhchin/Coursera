@@ -140,6 +140,12 @@
           "comment": "",
           "author": "",
           "date": "2017-03-25T12:31:32.743Z"
+        },
+        {
+          "rating": 5,
+          "comment": "THIS IS A TEST COMMENT TO SEE HOW STORED ON SERVER SIDE",
+          "author": "SERGE URAKHCHIN",
+          "date": "2017-03-25T13:02:57.981Z"
         }
       ]
     },
