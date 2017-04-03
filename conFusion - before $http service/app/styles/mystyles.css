@@ -96,7 +96,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    .nav-tabs > li {
+    .nav-tabs > li{
         float:none;
     }
      .media-body {
