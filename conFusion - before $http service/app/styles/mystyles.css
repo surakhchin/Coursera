@@ -94,3 +94,9 @@ body {
   position: absolute;
   right: 0px;
 }
+
+@media (max-width: 480px) {
+    .nav-tabs > li {
+        float:none;
+    }
+}
