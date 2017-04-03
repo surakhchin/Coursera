@@ -85,11 +85,27 @@ angular.module('confusionApp')
             };
         }])
 
-        .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
+        .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', '$window', function($scope, $stateParams, menuFactory, $window) {
 
             var dish= menuFactory.getDish(parseInt($stateParams.id,10));
             
             $scope.dish = dish;
+            $scope.class = "media-top";
+            $scope.number = $window.innerWidth;
+
+            $scope.changeClass = function () {
+
+                if ($scope.number > 500) {
+                    $scope.class = "media-left media-middle";
+                    return $scope.class;
+                }
+                else {
+                    $scope.class = "media-top";
+                    return $scope.class;
+                }
+            };
+            $scope.changeClass();
+
             
         }])
 

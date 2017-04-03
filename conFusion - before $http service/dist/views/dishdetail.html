@@ -4,12 +4,12 @@
             <button class="btn btn-xs btn-primary pull-right"
                     type="button" ui-sref="app.menu">
                     Back to Menu
-                </button><br><br>
+                </button>
             <div class="col-xs-12" >
                 <ul class="media-list">
                        <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
                     <li class="media">
-                        <div class="media-left media-middle">
+                        <div ng-class="class">
                             <a ui-sref="app.menu">
                             <img class="media-object img-thumbnail"
                              ng-src={{dish.image}} alt="Uthappizza">
