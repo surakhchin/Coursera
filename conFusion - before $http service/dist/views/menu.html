@@ -29,7 +29,7 @@
                        <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
                        <!--We changed ng-href to ui-sref to change the nested state app.dishdetails via UI-Router-->
                         <li class="media" ng-repeat="dish in dishes | filter:filtText">
-                            <div id="mediatop" class="media-left">
+                            <div ng-class="class">
                                 <a ui-sref="app.dishdetails({id: dish._id})">
                                 <img class="media-object img-thumbnail"
                                  ng-src={{dish.image}} alt="Uthappizza">
@@ -41,7 +41,7 @@
                                      <span class="label label-danger">{{dish.label}}</span>
                                      <span class="badge">{{dish.price | currency}}</span></h2>
                                     <p ng-show="showDetails">{{dish.description}}</p>
-                                    <p><span class="glyphicon glyphicon-chevron-left"></span> Click on picture to read or post a comment!</p>
+                                    <p><a ui-sref="app.dishdetails({id: dish._id})"><span class="glyphicon glyphicon-chevron-left"></span></a> Click on image to read or post a comment!</p>
 
                             </div>
                         </li>

@@ -2,12 +2,13 @@
 
 angular.module('confusionApp')
 
-        .controller('MenuController', ['$scope', 'menuFactory', function($scope, menuFactory) {
+        .controller('MenuController', ['$scope', 'menuFactory', '$window', function($scope, menuFactory, $window) {
             
             $scope.tab = 1;
             $scope.filtText = '';
             $scope.showDetails = true;
-
+            $scope.class = "media-top";
+            $scope.number = $window.innerWidth;
 
             $scope.dishes= menuFactory.getDishes();
 
@@ -37,7 +38,18 @@ angular.module('confusionApp')
                 $scope.showDetails = !$scope.showDetails;
             };
 
+            $scope.changeClass = function () {
 
+                if ($scope.number > 500) {
+                    $scope.class = "media-left";
+                    return $scope.class;
+                }
+                else {
+                    $scope.class = "media-top";
+                    return $scope.class;
+                }
+            };
+            $scope.changeClass();
 
 
         }])
