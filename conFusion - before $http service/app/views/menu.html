@@ -40,7 +40,7 @@
                                 <h2 class="media-heading">{{dish.name}}
                                  <span class="label label-danger">{{dish.label}}</span>
                                  <span class="badge">{{dish.price | currency}}</span></h2>
-                                <p ng-show="showDetails">{{dish.description}}</p>
+                                <p ng-show="showDetails">{{dish.description}}</p><p ng-disabled="!$first"><span class="glyphicon glyphicon-chevron-left"></span> Click picture to read comments!</p>
                                 <!--<p>Comment: {{dish.comment}}</p>-->
                                 <!--<p>Type your comment:-->
                                  <!--<input type="text" ng-model="dish.comment"></p>-->

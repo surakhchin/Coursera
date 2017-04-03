@@ -6,7 +6,7 @@ angular.module('confusionApp')
             
             $scope.tab = 1;
             $scope.filtText = '';
-            $scope.showDetails = false;
+            $scope.showDetails = true;
 
             $scope.dishes= menuFactory.getDishes();
 
