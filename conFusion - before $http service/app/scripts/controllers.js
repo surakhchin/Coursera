@@ -8,6 +8,7 @@ angular.module('confusionApp')
             $scope.filtText = '';
             $scope.showDetails = true;
 
+
             $scope.dishes= menuFactory.getDishes();
 
                         
@@ -35,6 +36,10 @@ angular.module('confusionApp')
             $scope.toggleDetails = function() {
                 $scope.showDetails = !$scope.showDetails;
             };
+
+
+
+
         }])
 
         .controller('ContactController', ['$scope', function($scope) {

@@ -51,7 +51,7 @@ angular.module('confusionApp')
                         },
                         {
                           _id:1,
-                          name:'Zucchipakoda', 
+                          name:'Zucchi',
                           image: 'images/zucchipakoda.png',
                           category: 'appetizer', 
                           label:'',

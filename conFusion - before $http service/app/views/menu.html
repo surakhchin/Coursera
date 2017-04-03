@@ -1,6 +1,4 @@
-
-
-    <div class="container">
+<div class="container" xmlns:filter="http://www.w3.org/1999/xhtml">
         <!--   HERE WE CHANGE NG-INIT INTO AN ARRAY OF JAVASCRIPT OBJECTS, an array of 4 different dishes to create
         a menu list-->
         <!--ATTACHING THE CONTROLLER: We delete ng-repeat and replace it with ng-controller. -->
@@ -41,7 +39,8 @@
                                 <h2 class="media-heading">{{dish.name}}
                                  <span class="label label-danger">{{dish.label}}</span>
                                  <span class="badge">{{dish.price | currency}}</span></h2>
-                                <p ng-show="showDetails">{{dish.description}}</p><p ng-disabled="!$first"><span class="glyphicon glyphicon-chevron-left"></span> Click on picture to read the comments!</p>
+                                <p ng-show="showDetails">{{dish.description}}</p>
+                                <p><span class="glyphicon glyphicon-chevron-left"></span> Click on picture to read or post a comment!</p>
                                 <!--<p>Comment: {{dish.comment}}</p>-->
                                 <!--<p>Type your comment:-->
                                  <!--<input type="text" ng-model="dish.comment"></p>-->

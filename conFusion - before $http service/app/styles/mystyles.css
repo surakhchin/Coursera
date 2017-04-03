@@ -99,4 +99,7 @@ body {
     .nav-tabs > li {
         float:none;
     }
+     .media-body {
+    font-size: smaller;
+  }
 }
