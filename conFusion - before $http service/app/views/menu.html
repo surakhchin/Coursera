@@ -38,10 +38,10 @@
                             <div class="media-body">
 
                                     <h2 class="media-heading">{{dish.name}}
-                                     <span class="label label-danger">{{dish.label}}</span>
-                                     <span class="badge">{{dish.price | currency}}</span></h2>
+                                     <a ui-sref="app.dishdetails({id: dish._id})"><span class="label label-danger">{{dish.label}}</span></a>
+                                     <a ui-sref="app.dishdetails({id: dish._id})"><span class="badge">{{dish.price | currency}}</span></a></h2>
                                     <p ng-show="showDetails">{{dish.description}}</p>
-                                    <p><a ui-sref="app.dishdetails({id: dish._id})"><span class="glyphicon glyphicon-chevron-left"></span></a> Click on picture to read or post a comment!</p>
+                                    <p><a ui-sref="app.dishdetails({id: dish._id})"><span class="glyphicon glyphicon-chevron-left"></span></a> Click on image to read or post a comment!</p>
 
                             </div>
                         </li>
