@@ -55,6 +55,20 @@ angular.module('confusionApp', ['ui.router'])
                 }
             })
 
+
+                // route for the menu#menu id in menu page
+            .state('app.menuid', {
+                url: 'menu#menu',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/menu.html',
+                        controller  : 'MenuController'
+                    }
+                }
+            })
+
+
+
             // route for the dishdetail page
             .state('app.dishdetails', {
                 url: 'menu/:id',

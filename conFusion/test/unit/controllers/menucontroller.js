@@ -1,3 +1,5 @@
+'use strict';
+
 describe('Controller: MenuController', function () {
 
   // load the controller's module
@@ -5,7 +7,7 @@ describe('Controller: MenuController', function () {
 
   var MenuController, scope, $httpBackend;
 
- // Initialize the controller and a mock scope
+  // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, _$httpBackend_,  $rootScope, menuFactory) {
 
           // place here mocked dependencies
@@ -41,10 +43,9 @@ describe('Controller: MenuController', function () {
             $httpBackend.flush();
 
   }));
+ it('should have showDetails as false', function () {
 
-it('should have showDetails as false', function () {
-
-    expect(scope.showDetails).toBeFalsy();
+    expect(scope.showDetails).toBeTruthy();
 
   });
 
@@ -73,8 +74,4 @@ it('should have showDetails as false', function () {
       expect(scope.filtText).toEqual('mains');
 
   });
-
-
-
 });
-
