@@ -34,6 +34,7 @@ angular.module('confusionApp')
 
         .service('feedbackFactory', ['$resource', 'baseURL', '$http', function ($resource, baseURL, $http) {
 
+
             this.getFeedback = function () {
                                 return $resource(baseURL+"feedback/:id",null,  {'update':{method:'PUT' }});
             }
