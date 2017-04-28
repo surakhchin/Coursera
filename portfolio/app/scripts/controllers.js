@@ -2,7 +2,7 @@
 
 angular.module('confusionApp')
 
-        .controller('MenuController', ['$scope', 'menuFactory', '$window', function($scope, menuFactory, $window) {
+        .controller('MenuController', ['$scope', 'demoFactory', '$window', function($scope, demoFactory, $window) {
             
             $scope.tab = 1;
             $scope.filtText = '';
@@ -10,7 +10,7 @@ angular.module('confusionApp')
             $scope.class = "media-top";
             $scope.number = $window.innerWidth;
 
-            $scope.dishes= menuFactory.getDishes();
+            $scope.dishes= demoFactory.getDishes();
 
                         
             $scope.select = function(setTab) {
@@ -85,9 +85,9 @@ angular.module('confusionApp')
             };
         }])
 
-        .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', '$window', function($scope, $stateParams, menuFactory, $window) {
+        .controller('DishDetailController', ['$scope', '$stateParams', 'demoFactory', '$window', function($scope, $stateParams, demoFactory, $window) {
 
-            var dish= menuFactory.getDish(parseInt($stateParams.id,10));
+            var dish= demoFactory.getDish(parseInt($stateParams.id,10));
             
             $scope.dish = dish;
             $scope.class = "media-top";
@@ -127,19 +127,21 @@ angular.module('confusionApp')
         }])
 
         // implement the IndexController and About Controller here
-        .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', function($scope, menuFactory, corporateFactory) {
+        .controller('IndexController', ['$scope', 'demoFactory', 'corporateFactory', function($scope, demoFactory, corporateFactory) {
 
             var leader= corporateFactory.getLeader(3);
 
             $scope.leader = leader;
 
-            var promotion = menuFactory.getPromotion(0);
+            var promotion = demoFactory.getPromotion(0);
 
             $scope.promotion = promotion;
 
-            var dish= menuFactory.getDish(0);
+            $scope.dish= demoFactory.getDish(0);
 
-            $scope.dish= dish;
+            $scope.skills = demoFactory.getSkills();
+
+
 
         }])
 
