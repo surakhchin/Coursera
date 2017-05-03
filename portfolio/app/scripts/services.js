@@ -187,38 +187,77 @@ angular.module('confusionApp')
                 }
                 
             ];
-    
-                this.getDishes = function(){
 
-                    return dishes;
 
-                };
 
-                this.getDish = function (index) {
-                    
-                    return dishes[index];
-                };
-    
-                // implement a function named getPromotion
-                // that returns a selected promotion.
-                this.getPromotion = function (index) {
 
-                    return promotions[index];
-                };
+
+
+
 
             var skills = {
                 image: 'images/skills_image.jpg',
                 list: ['html',
-                        'css',
+                        'css','Bootstrap','jQuery',
                         'javascript',
-                        'angularJS',
-                        'nodeJS',
-                        'other']
+                        'angularJS', '-model', '-controller', '-directories', '-filters', '-services',
+                    '-scope', '-forms', '-dependency injection', '-templates', '-routing', '-RESTfuf client-service communication',
+                    '-Karma/Jasmine Unit Testing', '-Protractor E2E Testing',
+                        'nodeJS', 'MVC','JSON-Server','Bower','Yo/Yeoman','MongoDB','Express',
+                        'other'],
+                title: 'Skill List'
             };
 
             this.getSkills = function () {
                 return skills;
             };
+
+            var samples = {
+                image: 'images/sampleprojects.png',
+                list: ['Confusion', 'Chicago', 'Demo', 'Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
+                title: 'Sample Projects'
+            };
+
+            this.getSamples = function () {
+                return samples;
+            };
+
+            var cridentials = {
+                image: 'images/credentials.png',
+                list: ['UoI Diploma', 'Depaul Dimploma',
+                ],
+                title: 'Educational Cridentials'
+            };
+
+            this.getCridentials = function () {
+                return cridentials;
+            }
+
+
+
+
+
+
+
+
+            this.getDishes = function(){
+
+                return dishes;
+
+            };
+
+            this.getDish = function (index) {
+
+                return dishes[index];
+            };
+
+            // implement a function named getPromotion
+            // that returns a selected promotion.
+            this.getPromotion = function (index) {
+
+                return promotions[index];
+            };
+
 
 
         }])

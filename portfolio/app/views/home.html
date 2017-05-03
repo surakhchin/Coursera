@@ -14,8 +14,14 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">{{dish.name}} <span class="label label-danger">{{dish.label}}</span> <span class="badge">{{dish.price | currency}}</span></h3>
-                        <p>{{dish.description}}</p>
+                        <h3 class="media-heading">{{skills.title}} <span class="label label-danger">{{dish.label}}</span> <span class="badge">{{dish.price | currency}}</span></h3>
+                        <p>
+                            <ul class="media-list">
+                                <li class="media" ng-repeat="skill in skills.list">
+                                    {{skill}}
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -32,12 +38,16 @@
                     <div class="media-left media-middle">
                         <a href="#">
                         <img class="media-object img-thumbnail"
-                         ng-src={{promotion.image}} alt="Buffet">
+                         ng-src={{samples.image}} alt="samples-image">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">{{promotion.name}} <span class="label label-danger">{{promotion.label}}</span> <span class="badge">{{promotion.price | currency}}</span></h3>
-                        <p>{{promotion.description}}</p>
+                        <h3 class="media-heading">{{samples.title}} <span class="label label-danger">{{promotion.label}}</span> <span class="badge">{{promotion.price | currency}}</span></h3>
+                        <p><ul class="media-list">
+                                <li class="media" ng-repeat="sample in samples.list">
+                                    {{sample}}
+                                </li>
+                            </ul></p>
                     </div>
 
                 </div>
@@ -54,13 +64,16 @@
                     <div class="media-left media-middle">
                         <a href="#">
                         <img class="media-object img-thumbnail"
-                         ng-src={{leader.image}} alt="Alberto Somayya">
+                         ng-src={{cridentials.image}} alt="cridentials-image">
                         </a>
                     </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">{{leader.name}}</h3>
-                        <h4>{{leader.designation}}</h4>
-                        <p>{{leader.description}}</p>
+                   <div class="media-body">
+                        <h3 class="media-heading">{{cridentials.title}} <span class="label label-danger">{{promotion.label}}</span> <span class="badge">{{promotion.price | currency}}</span></h3>
+                        <p><ul class="media-list">
+                                <li class="media" ng-repeat="cridential in cridentials.list">
+                                    {{cridential}}
+                                </li>
+                            </ul></p>
                     </div>
                 </div>
             </div>

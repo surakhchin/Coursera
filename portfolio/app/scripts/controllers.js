@@ -141,6 +141,10 @@ angular.module('confusionApp')
 
             $scope.skills = demoFactory.getSkills();
 
+            $scope.samples = demoFactory.getSamples();
+
+            $scope.cridentials = demoFactory.getCridentials();
+
 
 
         }])
