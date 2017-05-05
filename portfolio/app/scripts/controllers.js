@@ -149,7 +149,7 @@ angular.module('confusionApp')
 
         }])
 
-        .controller('AboutController', ['$scope', '$window', 'corporateFactory', function($scope, $window, corporateFactory) {
+        .controller('AboutController', ['$scope', '$window', 'corporateFactory', 'demoFactory', function($scope, $window, corporateFactory, demoFactory) {
 
             $scope.leadership= corporateFactory.getLeaders();
 
@@ -168,6 +168,8 @@ angular.module('confusionApp')
                 }
             };
             $scope.changeClass();
+
+            $scope.goals = demoFactory.getGoals();
 
         }])
 

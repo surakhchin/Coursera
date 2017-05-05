@@ -4,28 +4,31 @@
             <div class="col-xs-12">
                <ul class="breadcrumb">
                    <li><a href="index.html">Home</a></li>
-                   <li class="active">About Us</li>
+                   <li class="active">About Me</li>
                </ul>
             </div>
             <div class="col-xs-12">
-               <h3>About Us</h3>
+               <h3>About Me</h3>
                <hr>
             </div>
         </div>
         
         <div class="row row-content">
             <div class="col-xs-12 col-sm-8">
-                <h2>Our History</h2>
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                <h2>{{goals.title}}</h2>
                 <div class="well">
                     <blockquote>
-                        <p>You better cut the pizza in four pieces because
-                            I'm not hungry enough to eat six.</p>
-                        <footer>Yogi Berra,  
-                        <cite title="Source Title">The Wit and Wisdom of Yogi Berra, P. Pepe, Diversion Books, 2014</cite></footer>
-                    </blockquote>                
+                        <p>{{goals.summary}}</p>
+                        <footer>Serge Urakhchin
+                        </footer>
+                    </blockquote>
                 </div>
+                <p>
+                    <h4>{{goals.title2}}</h4>
+                    <ul ng-repeat="goal in goals.list">
+                        <li>{{goal}}</li>
+                    </ul>
+                </p>
 
             </div>
             <div class="col-xs-12 col-sm-4">
@@ -52,6 +55,55 @@
             </div>
         </div>
 
+        <div class="row row-content">
+
+               <!-- STEPS -->
+  <section id="Steps" class="steps-section">
+
+    <h2 class="steps-header">
+      Responsive Semantic Timeline
+    </h2>
+
+    <div class="steps-timeline">
+
+      <div class="steps-one">
+        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+        <h3 class="steps-name">
+          Semantic
+        </h3>
+        <p class="steps-description">
+          The timeline is created using negative margins and a top border.
+        </p>
+      </div>
+
+      <div class="steps-two">
+        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+        <h3 class="steps-name">
+          Relative
+        </h3>
+        <p class="steps-description">
+           All elements are positioned realtive to the parent. No absolute positioning.
+        </p>
+      </div>
+
+      <div class="steps-three">
+        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+        <h3 class="steps-name">
+          Contained
+        </h3>
+        <p class="steps-description">
+           The timeline does not extend past the first and last elements.
+        </p>
+      </div>
+
+    </div><!-- /.steps-timeline -->
+
+  </section>
+
+
+
+
+        </div>
 
         <div class="row row-content">
             <div class="col-xs-12 col-sm-9">
@@ -78,6 +130,7 @@
                 <p style="padding:20px;"></p>
             </div>
        </div>
+
         <div class="row row-content">
             <div class="col-xs-12 col-sm-9">
                 <h2>Facts &amp; Figures</h2>

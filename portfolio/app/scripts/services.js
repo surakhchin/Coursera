@@ -6,12 +6,63 @@ angular.module('confusionApp')
         .constant("baseURL","http://localhost:3000/")
         .service('demoFactory', ['$http', 'baseURL', function($http,baseURL) {
 
+            var skills = {
+                image: 'images/skills_image.jpg',
+                list: ['html',
+                        'css','Bootstrap','jQuery',
+                        'javascript',
+                        'angularJS', '-model', '-controller', '-directories', '-filters', '-services',
+                    '-scope', '-forms', '-dependency injection', '-templates', '-routing', '-RESTfuf client-service communication',
+                    '-Karma/Jasmine Unit Testing', '-Protractor E2E Testing',
+                        'nodeJS', 'MVC','JSON-Server','Bower','Yo/Yeoman','MongoDB','Express',
+                        'other'],
+                title: 'Skill List'
+            };
+
+            this.getSkills = function () {
+                return skills;
+            };
+
+            var samples = {
+                image: 'images/sampleprojects.png',
+                list: ['Confusion', 'Chicago', 'Demo', 'Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
+                title: 'Sample Projects'
+            };
+
+            this.getSamples = function () {
+                return samples;
+            };
+
+            var cridentials = {
+                image: 'images/credentials.png',
+                list: ['UoI Diploma', 'Depaul Dimploma'
+                ],
+                title: 'Educational Credentials'
+            };
+
+            this.getCridentials = function () {
+                return cridentials;
+            };
+
+            var goals = {
+                title: 'Programming Goals',
+                list: ['employment as a full stack web developer', 'master front end skills: CSS, JS, HTML, Angular, web tools, testing, routing, ect. ', 'develop personal web app projects', 'keep up to date with evolving techs in the industry', 'transition to server side development with nodeJS', 'create sample apps with business logic'],
+                summary: 'My ultimate goal is to become a full stack web developer. I plan to achieve this goal by mastering the MEAN JavaScript Stack. I am a fan of Single Page Applications because they are very fast, user friendly, and are multi plateform. Over the summer 2017 my personal goal is to develop a laser tag web app game, where the app registers users geo-location and rotational data and compares to other users in room in order to process a direct hit or not. In order to develop this web app game I plan on using AngularJS for front end and NodeJS for back end. I also would like to learn about Cordova and Ionic so I can make the app compatible with mobile devices.',
+                title2: 'Goal List'
+            };
+
+            this.getGoals = function () {
+                return goals;
+            };
+
+// ----------------------------------------------------------------------------------------------------
+
             var dishes=[
                          {
                           _id:0,
                           name:'Uthapizza',
                           image: 'images/uthapizza.png',
-                          category: 'mains', 
+                          category: 'mains',
                           label:'Hot',
                           price:'4.99',
                           description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
@@ -46,14 +97,14 @@ angular.module('confusionApp')
                                    author:"25 Cent",
                                    date:"2011-12-02T17:57:28.556094Z"
                                }
-                               
+
                            ]
                         },
                         {
                           _id:1,
                           name:'Zucchi',
                           image: 'images/zucchipakoda.png',
-                          category: 'appetizer', 
+                          category: 'appetizer',
                           label:'',
                           price:'1.99',
                           description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
@@ -88,14 +139,14 @@ angular.module('confusionApp')
                                    author:"25 Cent",
                                    date:"2011-12-02T17:57:28.556094Z"
                                }
-                               
+
                            ]
                         },
                         {
                           _id:2,
-                          name:'Vadonut', 
+                          name:'Vadonut',
                           image: 'images/vadonut.png',
-                          category: 'appetizer', 
+                          category: 'appetizer',
                           label:'New',
                           price:'1.99',
                           description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
@@ -130,14 +181,14 @@ angular.module('confusionApp')
                                    author:"25 Cent",
                                    date:"2011-12-02T17:57:28.556094Z"
                                }
-                               
+
                            ]
                         },
                         {
                           _id:3,
-                          name:'ElaiCheese Cake', 
+                          name:'ElaiCheese Cake',
                           image: 'images/elaicheesecake.png',
-                          category: 'dessert', 
+                          category: 'dessert',
                           label:'',
                           price:'2.99',
                           description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
@@ -172,70 +223,21 @@ angular.module('confusionApp')
                                    author:"25 Cent",
                                    date:"2011-12-02T17:57:28.556094Z"
                                }
-                               
+
                            ]
                         }
                         ];
             var promotions = [
                 {
                           _id:0,
-                          name:'Weekend Grand Buffet', 
+                          name:'Weekend Grand Buffet',
                           image: 'images/buffet.png',
                           label:'New',
                           price:'19.99',
                           description:'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person '
                 }
-                
+
             ];
-
-
-
-
-
-
-
-
-            var skills = {
-                image: 'images/skills_image.jpg',
-                list: ['html',
-                        'css','Bootstrap','jQuery',
-                        'javascript',
-                        'angularJS', '-model', '-controller', '-directories', '-filters', '-services',
-                    '-scope', '-forms', '-dependency injection', '-templates', '-routing', '-RESTfuf client-service communication',
-                    '-Karma/Jasmine Unit Testing', '-Protractor E2E Testing',
-                        'nodeJS', 'MVC','JSON-Server','Bower','Yo/Yeoman','MongoDB','Express',
-                        'other'],
-                title: 'Skill List'
-            };
-
-            this.getSkills = function () {
-                return skills;
-            };
-
-            var samples = {
-                image: 'images/sampleprojects.png',
-                list: ['Confusion', 'Chicago', 'Demo', 'Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
-                title: 'Sample Projects'
-            };
-
-            this.getSamples = function () {
-                return samples;
-            };
-
-            var cridentials = {
-                image: 'images/credentials.png',
-                list: ['UoI Diploma', 'Depaul Dimploma',
-                ],
-                title: 'Educational Cridentials'
-            };
-
-            this.getCridentials = function () {
-                return cridentials;
-            }
-
-
-
-
 
 
 
@@ -308,10 +310,16 @@ angular.module('confusionApp')
                 };
 
             corpfac.getLeader = function (index) {
-
                 return leadership[index];
             };
+
+
             return corpfac;
+
+
+
+
+
         })
 
 ;
