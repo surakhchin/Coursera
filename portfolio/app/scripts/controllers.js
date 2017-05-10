@@ -143,7 +143,7 @@ angular.module('confusionApp')
 
             $scope.samples = demoFactory.getSamples();
 
-            $scope.cridentials = demoFactory.getCridentials();
+            $scope.credentials = demoFactory.getCredentials();
 
 
 

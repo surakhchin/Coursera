@@ -36,15 +36,16 @@ angular.module('confusionApp')
                 return samples;
             };
 
-            var cridentials = {
+            var credentials = {
                 image: 'images/credentials.png',
-                list: ['UoI Diploma', 'Depaul Dimploma'
-                ],
-                title: 'Educational Credentials'
+                list: ['UoI Diploma', 'Depaul Diploma'],
+                title: 'Educational Credentials',
+                diploma: 'images/diploma.png',
+                ddiploma: 'images/ddiploma.png'
             };
 
-            this.getCridentials = function () {
-                return cridentials;
+            this.getCredentials = function () {
+                return credentials;
             };
 
             var goals = {

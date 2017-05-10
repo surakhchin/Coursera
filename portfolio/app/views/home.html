@@ -86,10 +86,10 @@
             <div class="col-xs-12 col-sm-3">
 
                 <p style="padding:20px;"></p>
-                <h3 align=center><a ui-sref="app.dishdetails({id: 0})">
+                <h2 align=center><a ui-sref="app.dishdetails({id: 0})">
                         <img class="media-object img-thumbnail"
-                         ng-src={{cridentials.image}} alt="skill-image">
-                        </a></h3>
+                         ng-src={{credentials.image}} alt="skill-image">
+                        </a></h2>
             </div>
             <div class="col-xs-12 col-sm-3">
 				<div>
@@ -97,9 +97,8 @@
                         <h3>Educational Cridentials</h3>
                         <p>
                             <ul class="media-list">
-                                <li class="media" ng-repeat="skill in cridentials.list">
-                                    {{skill}}
-                                </li>
+                                <li><img class="img-thumbnail" ng-src={{credentials.diploma}} alt="uoi-diploma"></a></li>
+                                <li><img class="img-thumbnail" ng-src={{credentials.ddiploma}} alt="depaul-diploma"></a></li>
                             </ul>
                         </p>
                     </div>
