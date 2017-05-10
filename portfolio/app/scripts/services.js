@@ -9,7 +9,7 @@ angular.module('confusionApp')
             var skills = {
                 image: 'images/skills.png',
                 front: ['HTML5', 'CSS3', 'LESS', 'Bootstrap','jQuery', 'AngularJS'],
-                back: ['nodeJS','JSON-Server', 'RESTful API', 'MongoDB', 'Express'],
+                back: ['nodeJS','JSON-Server', 'RESTful API', 'MongoDB', 'Express','PowerShell'],
                 other: ['NPM','Karma/Jasmine','Bower','Gulp', 'Yo/Yeoman', 'WordPress', 'SourceTree' ],
                 list: ['html',
                         'css','Bootstrap','jQuery',
