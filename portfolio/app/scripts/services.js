@@ -7,7 +7,10 @@ angular.module('confusionApp')
         .service('demoFactory', ['$http', 'baseURL', function($http,baseURL) {
 
             var skills = {
-                image: 'images/skills_image.jpg',
+                image: 'images/skills.png',
+                front: ['HTML5', 'CSS3', 'Bootstrap','jQuery', 'AngularJS'],
+                back: ['nodeJS','JSON-Server', 'MongoDB', 'Express'],
+                other: ['Karma/Jasmine Unit Testing', 'Protractor E2E Testing', 'RESTful API'],
                 list: ['html',
                         'css','Bootstrap','jQuery',
                         'javascript',
