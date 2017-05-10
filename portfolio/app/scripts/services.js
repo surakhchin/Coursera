@@ -8,9 +8,9 @@ angular.module('confusionApp')
 
             var skills = {
                 image: 'images/skills.png',
-                front: ['HTML5', 'CSS3', 'Bootstrap','jQuery', 'AngularJS'],
-                back: ['nodeJS','JSON-Server', 'MongoDB', 'Express'],
-                other: ['Karma/Jasmine Unit Testing', 'Protractor E2E Testing', 'RESTful API'],
+                front: ['HTML5', 'CSS3', 'LESS', 'Bootstrap','jQuery', 'AngularJS'],
+                back: ['nodeJS','JSON-Server', 'RESTful API', 'MongoDB', 'Express'],
+                other: ['NPM','Karma/Jasmine','Bower','Gulp', 'Yo/Yeoman', 'WordPress', 'SourceTree' ],
                 list: ['html',
                         'css','Bootstrap','jQuery',
                         'javascript',
@@ -28,7 +28,7 @@ angular.module('confusionApp')
 
             var samples = {
                 image: 'images/sampleprojects.png',
-                list: ['Confusion', 'Chicago', 'Demo', 'Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
+                list: ['Demo', 'Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
                 title: 'Sample Projects'
             };
 
