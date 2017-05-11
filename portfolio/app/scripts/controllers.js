@@ -178,7 +178,10 @@ angular.module('confusionApp')
 
         }])
 
-    .controller('TimeController', [ function() {
+    .controller('TimeController', ['$scope', function($scope) {
+
+    	$scope.date = new Date();
+
 
         jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
