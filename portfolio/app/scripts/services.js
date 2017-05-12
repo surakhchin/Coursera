@@ -30,7 +30,7 @@ angular.module('confusionApp')
 
             var samples = {
                 image: 'images/sampleprojects.png',
-                list: ['Demo', 'Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
+                list: ['Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
                 title: 'Sample Projects'
             };
 
@@ -53,7 +53,7 @@ angular.module('confusionApp')
             var goals = {
                 title: 'Programming Goals',
                 list: ['employment as a full stack web developer', 'master front end skills: CSS, JS, HTML, Angular, web tools, testing, routing, ect. ', 'develop personal web app projects', 'keep up to date with evolving techs in the industry', 'transition to server side development with nodeJS', 'create sample apps with business logic'],
-                summary: 'My ultimate goal is to become a full stack web developer. I plan to achieve this goal by mastering the MEAN JavaScript Stack. I am a fan of Single Page Applications because they are very fast, user friendly, and are multi plateform. Over the summer 2017 my personal goal is to develop a laser tag web app game, where the app registers users geo-location and rotational data and compares to other users in room in order to process a direct hit or not. In order to develop this web app game I plan on using AngularJS for front end and NodeJS for back end. I also would like to learn about Cordova and Ionic so I can make the app compatible with mobile devices.',
+                summary: '    My ultimate goal is to become a full stack web dev guru. I plan to achieve this goal by mastering the MEAN JavaScript Stack. The resource Im using to learn these technologies is the Coursera Full Stack Specialization Program. So far I am capable of building simple responsive front-end single page applications using AngularJS in congruency with other front end techs like jQuery and Bootstrap. I also figured out how to host these static dynamic sites via GitHub Pages. I am a fan of building Single Page Applications because they are very fast, user friendly, and can be accessed multi platform. My next step is transition over to the back-end side of the MEAN stack, were I will further learn and develop example server side apps with nodeJS, Express, and MongoDB. Over the summer 2017 my app developing goal is to develop a laser tag web app game, where the app registers users geo-location and rotational data and compares to other users in room in order to process a direct hit or not.',
                 title2: 'Goal List'
             };
 
