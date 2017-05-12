@@ -20,7 +20,8 @@ angular.module('confusionApp')
                         'nodeJS', 'MVC','JSON-Server','Bower','Yo/Yeoman','MongoDB','Express',
                         'other'],
                 title: 'Skill List',
-                serge: 'images/face3.png'
+                face: 'images/Face.png',
+                face3: 'images/Face3.png'
             };
 
             this.getSkills = function () {

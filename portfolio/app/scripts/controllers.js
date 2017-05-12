@@ -180,22 +180,41 @@ angular.module('confusionApp')
 
 			});
 
-
+            // $scope.class = "media-top";
+            // $scope.number = $window.innerWidth;
+            //
+            // $scope.changeClass = function () {
+            //
+            //     if ($scope.number > 500) {
+            //         $scope.class = "media-left media-middle";
+            //         return $scope.class;
+            //     }
+            //     else {
+            //         $scope.class = "media-top";
+            //         return $scope.class;
+            //     }
+            // };
+            // $scope.changeClass();
 
 
 			$scope.number = $window.innerWidth;
             $scope.class = "dl-horizontal";
+            $scope.class2 = 'media-left media-middle';
             $scope.changeClass = function () {
 
 
 
                 if ($scope.number < 992) {
                     $scope.class = "dl-vertical";
+                    $scope.class2 = 'media-top';
                     return $scope.class;
+                    return $scope.class2;
                 }
                 else {
                     $scope.class = "dl-horizontal";
+                    $scope.class2 = 'media-left media-middle';
                     return $scope.class;
+                    return $scope.class2;
                 }
             };
             $scope.changeClass();
