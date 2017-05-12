@@ -2,13 +2,19 @@
 
 angular.module('confusionApp')
 
+	    .controller('JumboController', ['$scope', function($scope) {
+
+            $scope.date = new Date();
+        }])
+
+
         .controller('MenuController', ['$scope', 'demoFactory', '$window', function($scope, demoFactory, $window) {
             
             $scope.tab = 1;
             $scope.filtText = '';
             $scope.showDetails = true;
             $scope.class = "media-top";
-            $scope.number = $window.innerWidth();
+
 
             $scope.dishes= demoFactory.getDishes();
 

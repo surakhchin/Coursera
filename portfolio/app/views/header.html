@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<header class="jumbotron">
+<header class="jumbotron" ng-controller="JumboController">
     <!-- Main component for a primary marketing message or call to action -->
     <div class="container">
         <div class="row row-header">
@@ -51,4 +51,5 @@
 
         </div>
     </div>
+    <div style="display: inline-block; float: right; margin-top: 30px;">{{date | date:"MMMM dd'th,' yyyy h':'m a "}}</div>
 </header>
