@@ -12,7 +12,8 @@
                <hr>
             </div>
         </div>
-        
+
+
         <div class="row row-content">
             <div class="col-xs-12 col-sm-7 col-lg-8">
                 <h2>{{goals.title}}</h2>
@@ -51,6 +52,28 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-12">
+                <h2>Cover Letter</h2>
+               <ul class="media-list">
+                   <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
+                   <!--We changed ng-href to ui-sref to change the nested state app.dishdetails via UI-Router-->
+                    <li class="media">
+                        <div class="media-body">
+                            <h3 class="media-heading">Serge Urakhchin <small>Full Stack Web Developer</small></h3>
+                            <blockquote style="text-align: left" class="blockquote blockquote-reverse">{{goals.summary}}</blockquote>
+                            <!--<p>Comment: {{dish.comment}}</p>-->
+                            <!--<p>Type your comment:-->
+                             <!--<input type="text" ng-model="dish.comment"></p>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div>
 
         <div  class="row row-content">
             <section ng-controller="TimeController" class="cd-horizontal-timeline">
@@ -95,7 +118,7 @@
 				<h2>Discovery of MOOC Courses</h2>
 				<em>June 13th, 2014</em>
 				<p>
-					In the summer of '14 I came across a post on r/learnprogramming titled "100+ programming courses you can start today for FREE". I couldn't believe it, up to that point my assumption was that the only way one could learn programming was to go to an accredited university and get a four year computer science degree. I was overwhelmed by the resources these MOOC courses provided, and this over exposure to material was something I struggled for a while. In took me a about year of trying out different online courses to find a direction I was comfortable with.
+					MOOC stands for Massive Online Open Courses. In the summer '14 I came across a post on r/learnprogramming titled "100+ programming courses you can start today for FREE". Up to that point it was my assumption was that the only way one could learn programming was to go to an accredited university and get a four year computer science degree. I was overwhelmed by the resources these MOOC courses provided, and this over exposure to material was something I struggled with for a while. In took me a about year of trying out different online courses to find a direction I was comfortable with.
 				</p>
 			</li>
 
@@ -175,29 +198,6 @@
 </section>
         </div>
 
-
-
-        <div class="row row-content">
-            <div class="col-xs-12 col-sm-9">
-                <h2>Cover Letter</h2>
-               <ul class="media-list">
-                   <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
-                   <!--We changed ng-href to ui-sref to change the nested state app.dishdetails via UI-Router-->
-                    <li class="media">
-                        <div class="media-body">
-                            <h3 class="media-heading">Serge Urakhchin <small>Full Stack Web Developer</small></h3>
-                            <p>{{goals.summary}}</p>
-                            <!--<p>Comment: {{dish.comment}}</p>-->
-                            <!--<p>Type your comment:-->
-                             <!--<input type="text" ng-model="dish.comment"></p>-->
-                        </div>
-                    </li>
-                </ul>
-            </div>
-             <div class="col-xs-12 col-sm-3">
-                <p style="padding:20px;"></p>
-            </div>
-       </div>
 
         <div class="row row-content">
             <div class="col-xs-12 col-sm-9">
