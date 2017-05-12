@@ -14,24 +14,17 @@
         </div>
         
         <div class="row row-content">
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-sm-7 col-lg-8">
                 <h2>{{goals.title}}</h2>
-                <div class="well">
-                    <blockquote>
-                        <p>{{goals.summary}}</p>
-                        <footer>Serge Urakhchin
-                        </footer>
-                    </blockquote>
-                </div>
+                <p style="padding: 10px"></p>
                 <p>
-                    <h4>{{goals.title2}}</h4>
                     <ul ng-repeat="goal in goals.list">
                         <li>{{goal}}</li>
                     </ul>
                 </p>
-
+                <p style="padding-bottom: 20px"></p>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-5 col-lg-4">
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -39,16 +32,20 @@
                     </div>
                     <div class="panel-body">
                         <dl ng-class="class">
-                            <dt>Width</dt>
-                            <dd>{{number}}</dd>
-                            <dt>Started</dt>
-                            <dd>3 Feb. 2013</dd>
-                            <dt>Major Stake Holder</dt>
-                            <dd>HK Fine Foods Inc.</dd>
-                            <dt>Last Year's Turnover</dt>
-                            <dd>$1,250,375</dd>
-                            <dt>Employees</dt>
-                            <dd>40</dd>
+                            <dt>Age:</dt>
+                            <dd>28</dd>
+                            <dt>Years Programming:</dt>
+                            <dd>3+</dd>
+                            <dt>Years Web Dev:</dt>
+                            <dd>2+</dd>
+                            <dt>Expert Field:</dt>
+                            <dd>Front-end</dd>
+                            <dt>Desired Position:</dt>
+                            <dd>Fullstack</dd>
+                            <dt>Favorite Tech:</dt>
+                            <dd>AngularJS</dd>
+                            <dt>Screen Width:</dt>
+                            <dd id="window-info"><small>{{number}}px</small></dd>
                        </dl>
                     </div>
                 </div>
@@ -61,7 +58,7 @@
 		<div class="events-wrapper">
 			<div class="events" style="width: 1800px;">
 				<ol style="list-style: none;">
-					<li><a href="#0" data-date="16/01/2014" class="selected ui-link" style="left: 120px;">16 Jan</a></li>
+					<li><a href="#0" data-date="16/01/2014" class="selected ui-link" style="left: 120px;">Index</a></li>
 					<li><a href="#0" data-date="28/02/2014" class="ui-link" style="left: 300px;">28 Feb</a></li>
 					<li><a href="#0" data-date="20/04/2014" class="ui-link" style="left: 480px;">20 Mar</a></li>
 					<li><a href="#0" data-date="20/05/2014" class="ui-link" style="left: 600px;">20 May</a></li>
@@ -85,12 +82,12 @@
 	</div> <!-- .timeline -->
 
 	<div class="events-content">
-		<ol>
+		<ol style="list-style: none;">
 			<li class="selected" data-date="16/01/2014">
-				<h2>Horizontal Timeline</h2>
-				<em>January 16th, 2014</em>
+				<h2>Programming Timeline</h2>
+				<em>{{date | date:"MMMM dd'th,' yyyy"}}</em>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+					This is a timeline of my programming career. You can navigate using the arrow keys or click on each date individually. Credit goes to <u><a href="https://codyhouse.co/gem/horizontal-timeline/">CodyHouse</a></u> for the jQuery, CSS, and HTML code used. With AngularJS a controller was created to host the jQuery code.
 				</p>
 			</li>
 
@@ -178,55 +175,7 @@
 </section>
         </div>
 
-        <div class="row row-content">
 
-               <!-- STEPS -->
-  <section id="Steps" class="steps-section">
-
-    <h2 class="steps-header">
-      Responsive Semantic Timeline
-    </h2>
-
-    <div class="steps-timeline">
-
-      <div class="steps-one">
-        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
-        <h3 class="steps-name">
-          Semantic
-        </h3>
-        <p class="steps-description">
-          The timeline is created using negative margins and a top border.
-        </p>
-      </div>
-
-      <div class="steps-two">
-        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
-        <h3 class="steps-name">
-          Relative
-        </h3>
-        <p class="steps-description">
-           All elements are positioned realtive to the parent. No absolute positioning.
-        </p>
-      </div>
-
-      <div class="steps-three">
-        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
-        <h3 class="steps-name">
-          Contained
-        </h3>
-        <p class="steps-description">
-           The timeline does not extend past the first and last elements.
-        </p>
-      </div>
-
-    </div><!-- /.steps-timeline -->
-
-  </section>
-
-
-
-
-        </div>
 
         <div class="row row-content">
             <div class="col-xs-12 col-sm-9">

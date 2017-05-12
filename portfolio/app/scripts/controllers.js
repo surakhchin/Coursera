@@ -8,7 +8,7 @@ angular.module('confusionApp')
             $scope.filtText = '';
             $scope.showDetails = true;
             $scope.class = "media-top";
-            $scope.number = $window.innerWidth;
+            $scope.number = $window.innerWidth();
 
             $scope.dishes= demoFactory.getDishes();
 
@@ -151,12 +151,36 @@ angular.module('confusionApp')
 
         .controller('AboutController', ['$scope', '$window', 'corporateFactory', 'demoFactory', function($scope, $window, corporateFactory, demoFactory) {
 
+
+
             $scope.leadership= corporateFactory.getLeaders();
 
-            $scope.class = "dl-horizontal";
-            $scope.number = $window.innerWidth;
 
+            $(function(){
+			  // Bind the resize event. When the window size changes, update its corresponding
+			  // info div.
+			  $(window).resize(function(){
+				var elem = $(this);
+
+				// Update the info div width and height - replace this with your own code
+				// to do something useful!
+				$('#window-info').text(elem.width() + 'px');
+
+			  });
+
+			  // Updates the info div immediately.
+			  $(window).resize();
+
+			});
+
+
+
+
+			$scope.number = $window.innerWidth;
+            $scope.class = "dl-horizontal";
             $scope.changeClass = function () {
+
+
 
                 if ($scope.number < 992) {
                     $scope.class = "dl-vertical";
