@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<header class="jumbotron">
+<header class="jumbotron" ng-controller="JumboController">
     <!-- Main component for a primary marketing message or call to action -->
     <div class="container">
         <div class="row row-header">
@@ -41,14 +41,15 @@
             </div>
             <div class="col-xs-12 col-sm-2">
                 <p style="padding:20px;"></p>
-                <a style="" target="_blank" href="https://maildepaul-my.sharepoint.com/personal/surakhch_mail_depaul_edu/_layouts/15/guestaccess.aspx?docid=17be0ec70ed7d46d28ad89fdef38ba867&authkey=AVJv0pd7201j9Zy2wDFVsrE"><img style="display: block; margin-left: auto; margin-right: auto;"
+                <a style="" target="_blank" href="https://maildepaul-my.sharepoint.com/personal/surakhch_mail_depaul_edu/_layouts/15/guestaccess.aspx?docid=145f744492d2a493f89c01ed724ed4723&authkey=AR35ZJkR_gunN4Rt7bwk_nQ"><img style="display: block; margin-left: auto; margin-right: auto;"
                                class="img-responsive"  src="images/icon_resume.png" alt="icon-resume"></a>
             </div>
             <div class="col-xs-12 col-sm-2">
             <p style="padding:20px;"></p>
-            <a ui-sref="app"><img src="images/serge.png" class="img-responsive"></a>
+            <a ui-sref="app"><img class="img-responsive center-block" src="images/face.png" alt="face" ></a>
             </div>
 
         </div>
     </div>
+    <div style="display: inline-block; float: right; margin-top: 30px;">{{date | date:"MMMM dd'th,' yyyy h':'m a "}}</div>
 </header>

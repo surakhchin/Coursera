@@ -158,7 +158,8 @@ angular.module('confusionApp')
         .controller('AboutController', ['$scope', '$window', 'corporateFactory', 'demoFactory', function($scope, $window, corporateFactory, demoFactory) {
 
 
-
+			$scope.skills = demoFactory.getSkills();
+            $scope.goals = demoFactory.getGoals();
             $scope.leadership= corporateFactory.getLeaders();
 
 
@@ -199,7 +200,7 @@ angular.module('confusionApp')
             };
             $scope.changeClass();
 
-            $scope.goals = demoFactory.getGoals();
+
 
 
             // -----------------------------------

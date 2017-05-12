@@ -19,7 +19,8 @@ angular.module('confusionApp')
                     '-Karma/Jasmine Unit Testing', '-Protractor E2E Testing',
                         'nodeJS', 'MVC','JSON-Server','Bower','Yo/Yeoman','MongoDB','Express',
                         'other'],
-                title: 'Skill List'
+                title: 'Skill List',
+                serge: 'images/face3.png'
             };
 
             this.getSkills = function () {
