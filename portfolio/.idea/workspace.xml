@@ -37,7 +37,7 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="0">
               <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding />
             </state>
@@ -47,7 +47,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="272">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="43" column="115" lean-forward="false" selection-start-line="43" selection-start-column="115" selection-end-line="43" selection-end-column="115" />
+            <state relative-caret-position="289">
+              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -77,21 +77,11 @@
       <file leaf-file-name="jqueryassignmentTEST.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../Work/jqueryassignmentTEST.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="82">
               <caret line="77" column="105" lean-forward="false" selection-start-line="77" selection-start-column="105" selection-end-line="77" selection-end-column="105" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fom2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../fom2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -127,9 +117,9 @@
       <find>ui-corner-top</find>
       <find>#city</find>
       <find>city</find>
-      <find>seation</find>
       <find>city name</find>
       <find>all c</find>
+      <find>seation</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Serge\Documents\Coursera\portfolio</dir>
@@ -181,6 +171,7 @@
         <option value="$PROJECT_DIR$/poop.html" />
         <option value="$PROJECT_DIR$/../../Work/jqueryassignmentTEST.html" />
         <option value="$PROJECT_DIR$/app/views/header.html" />
+        <option value="$PROJECT_DIR$/../Portfolio1/index.html" />
       </list>
     </option>
   </component>
@@ -194,9 +185,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="1047" />
+    <option name="width" value="873" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -265,7 +256,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Work" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -527,7 +518,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="1047" y="0" width="873" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -536,9 +527,9 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937369" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22287048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3244397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268817" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -593,7 +584,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/gulp/package.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/gulp-usemin/lib/blocksBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1826">
@@ -846,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="272">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -854,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Work/jqueryassignmentTEST.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="82">
           <caret line="77" column="105" lean-forward="false" selection-start-line="77" selection-start-column="105" selection-end-line="77" selection-end-column="105" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -872,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="0">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding />
         </state>
@@ -881,15 +871,23 @@
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolio1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="43" column="115" lean-forward="false" selection-start-line="43" selection-start-column="115" selection-end-line="43" selection-end-column="115" />
+        <state relative-caret-position="289">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding />
         </state>
       </provider>

@@ -16,7 +16,7 @@
                         <p>
                             <ul class="media-list">
                                 <li class="media" ng-repeat="skill in skills.front">
-                                    {{skill}}
+                                    {{skill}} <div id="test"></div>
                                 </li>
                             </ul>
                         </p>
@@ -96,17 +96,16 @@
                          ng-src={{credentials.image}} alt="skill-image">
                         </h2>
             </div>
-            <div class="col-xs-12 col-sm-3">
-				<div>
-                    <div>
-                        <p>
-                            <ul class="media-list">
-                                <li><img class="img-thumbnail" ng-src={{credentials.diploma}} alt="uoi-diploma"></a></li>
-                                <li><img class="img-thumbnail" ng-src={{credentials.ddiploma}} alt="depaul-diploma"></a></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
+            <div class="col-xs-12 col-sm-4">
+
+                                <img class="img-thumbnail" ng-src={{credentials.diploma}} alt="uoi-diploma"></a>
+
+
             </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <img class="img-thumbnail" ng-src={{credentials.ddiploma}} alt="depaul-diploma"></a>
+            </div>
+
         </div>
     </div>
