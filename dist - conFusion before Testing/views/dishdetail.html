@@ -5,14 +5,15 @@
                 <h3>{{message}}</h3>
             </div>
             <div class="col-xs-12" ng-if="showDish">
-                 <button class="btn btn-xs btn-primary pull-right"
+            <button class="btn btn-xs btn-primary pull-right"
                     type="button" ui-sref="app.menu">
                     Back to Menu
                 </button>
+            <div class="col-xs-12" >
                 <ul class="media-list">
                        <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
                     <li class="media">
-                        <div class="media-left media-middle">
+                        <div ng-class="class">
                             <a ui-sref="app.menu">
                             <img class="media-object img-thumbnail"
                              ng-src={{dish.image}} alt="Uthappizza">
@@ -21,7 +22,7 @@
                         <div class="media-body">
                             <h2 class="media-heading">{{dish.name}}<span class="label label-danger">{{dish.label}}</span>
                              <span class="badge">{{dish.price | currency}}</span></h2>
-                            <p>{{dish.description}}</p>s
+                            <p>{{dish.description}}</p>
                             <!--<p>Comment: {{dish.comment}}</p>-->
                             <!--<p>Type your comment:-->
                              <!--<input type="text" ng-model="dish.comment"></p>-->
@@ -47,11 +48,6 @@
                         {{mycomment.author}}, {{mycomment.date | date}}
                     </footer>
                 </blockquote>
-
-
-
-
-
                 <ul class="list-unstyled">
                     <h3>Add a Comment</h3>
                     <p>Please enter in the required fields:</p>
@@ -69,7 +65,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Number of Stars</label>
                         <div class="col-sm-10">
-                            <label class="radio-inline"><input  ng-model="mycomment.rating" type="radio" name="rating" value="1">1</label>
+                            <label class="radio-inline"><input  ng-model="comments.rating" type="radio" name="rating" value="1">1</label>
                             <label class="radio-inline"><input ng-model="mycomment.rating" type="radio" name="rating" value="2">2</label>
                             <label class="radio-inline"><input ng-model="mycomment.rating" type="radio" name="rating" value="3">3</label>
                             <label class="radio-inline"><input ng-model="mycomment.rating" type="radio" name="rating" value="4">4</label>

@@ -1,15 +1,15 @@
 
     <div class="container" >
         <div class="row row-content" ng-controller="DishDetailController">
-            <div class="col-xs-12" >
-                 <button class="btn btn-xs btn-primary pull-right"
+            <button class="btn btn-xs btn-primary pull-right"
                     type="button" ui-sref="app.menu">
                     Back to Menu
                 </button>
+            <div class="col-xs-12" >
                 <ul class="media-list">
                        <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
                     <li class="media">
-                        <div class="media-left media-middle">
+                        <div ng-class="class">
                             <a ui-sref="app.menu">
                             <img class="media-object img-thumbnail"
                              ng-src={{dish.image}} alt="Uthappizza">
@@ -18,7 +18,7 @@
                         <div class="media-body">
                             <h2 class="media-heading">{{dish.name}}<span class="label label-danger">{{dish.label}}</span>
                              <span class="badge">{{dish.price | currency}}</span></h2>
-                            <p>{{dish.description}}</p>s
+                            <p>{{dish.description}}</p>
                             <!--<p>Comment: {{dish.comment}}</p>-->
                             <!--<p>Type your comment:-->
                              <!--<input type="text" ng-model="dish.comment"></p>-->

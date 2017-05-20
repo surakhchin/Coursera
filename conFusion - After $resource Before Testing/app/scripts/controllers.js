@@ -11,15 +11,15 @@ angular.module('confusionApp')
             $scope.number = $window.innerWidth;
 
                         $scope.showMenu = false;
-            $scope.message = "Loading ...";
+            $scope.message = "Loading ... Attempting REST Call";
                         menuFactory.getDishes().query(
                 function(response) {
                     $scope.dishes = response;
                     $scope.showMenu = true;
                 },
                 function(response) {
-                    $scope.message = "Error: "+response.status + " " + response.statusText;
-                });
+                                $scope.message = "Error: "+response.status + " the Menu data was not pulled by jSON-server because the server is not connected to GitHub pages." + response.statusText;
+                            });
 
                         
             $scope.select = function(setTab) {
@@ -99,15 +99,15 @@ angular.module('confusionApp')
             var dish= menuFactory.getDishes(parseInt($stateParams.id,10));
 
             $scope.showDish = false;
-            $scope.message="Loading ...";
-                        $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id,10)})
+            $scope.message="Loading ... Attempting REST GET Call to retrieve Dish Detail Data";
+            $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id,10)})
             .$promise.then(
                             function(response){
                                 $scope.dish = response;
                                 $scope.showDish = true;
                             },
                             function(response) {
-                                $scope.message = "Error: "+response.status + " " + response.statusText;
+                                $scope.message = "Error: "+response.status + " Note: the Menu data was not pulled by jSON-server because server not connected to this site" + response.statusText;
                             }
             );
 
@@ -139,6 +139,7 @@ angular.module('confusionApp')
                 console.log($scope.mycomment);
                                 $scope.dish.comments.push($scope.mycomment);
 
+                                //REST .UPDATE
                 menuFactory.getDishes().update({id:$scope.dish.id},$scope.dish);
                                 $scope.commentForm.$setPristine();
                                 $scope.mycomment = {rating:5, comment:"", author:"", date:""};
@@ -159,7 +160,7 @@ angular.module('confusionApp')
                             }
                         );
                         $scope.showDish = false;
-                        $scope.message="Loading ...";
+                        $scope.message="Loading ... Attempting REST Call GET to pull home page content";
                         $scope.dish = menuFactory.getDishes().get({id:0})
                         .$promise.then(
                             function(response){
@@ -167,7 +168,7 @@ angular.module('confusionApp')
                                 $scope.showDish = true;
                             },
                             function(response) {
-                                $scope.message = "Error: "+response.status + " " + response.statusText;
+                                $scope.message = "Error: "+response.status + " The .json file associated with the content of this site was unable to be served by GitHub pages, will be working on implementing solution soon. " + response.statusText;
                             }
                         );
 
