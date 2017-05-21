@@ -161,7 +161,7 @@ angular.module('confusionApp')
                         );
                         $scope.showDish = false;
                         $scope.message="Loading ... Attempting REST Call GET to pull home page content";
-                        $scope.dish = menuFactory.getDishes().get({id:3})
+                        $scope.dish = menuFactory.getDishes().get({id:0})
                         .$promise.then(
                             function(response){
                                 $scope.dish = response;
