@@ -1,69 +1,128 @@
 
     <div class="container" ng-controller="IndexController">
-        <div class="row row-content">
+        <div id="skillbackground" class="row row-content">
             <div class="col-xs-12 col-sm-3">
-
-                <p style="padding:20px;"></p>
-                <h3>
-                        <img class="media-object img-thumbnail center-block"
-                         ng-src={{skills.image}} alt="skill-image">
-                       </h3>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-				<div>
-                    <div>
-                        <h3 >Front-End <span class="label label-danger">best</span> <span class="badge"></span></h3>
-                        <p>
-                            <ul class="media-list">
-                                <li class="media" ng-repeat="skill in skills.front">
-                                    {{skill}} <div id="test"></div>
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
+                <div>
+                    <h3 >Front-End <span class="label label-danger">best</span></h3>
+                    <p>
+                        <ul class="media-list">
+                            <li class="media">
+                                HTML5
+                                <div class="seventy"></div>
+                            </li>
+                            <li class="media">
+                                CSS3
+                                <div class="sixty"></div>
+                            </li>
+                            <li class="media">
+                                Bootstrap
+                                <div class="sixty"></div>
+                            </li>
+                            <li class="media">
+                                jQuery
+                                <div class="fifty"></div>
+                            </li>
+                            <li class="media">
+                                AngularJS
+                                <div class="test"></div>
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-3">
-				<div>
-                    <div>
-                        <h3>Back-End</h3>
-                        <p>
-                            <ul class="media-list">
-                                <li class="media" ng-repeat="skill in skills.back">
-                                    {{skill}}
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
+                <div>
+                    <h3>Back-End <span class="label label-primary">new</span></h3>
+                    <p>
+                        <ul class="media-list">
+                            <li class="media">
+                                PowerShell
+                                <div class="fifty"></div>
+                            </li>
+                            <li class="media">
+                                MongoDB
+                                <div class="twenty"></div>
+                            </li>
+                            <li class="media">
+                                Express
+                                <div class="twenty"></div>
+                            </li>
+                            <li class="media">
+                                RESTful API
+                                <div class="fifty"></div>
+                            </li>
+                            <li class="media">
+                                NodeJS
+                                <div class="thirty"></div>
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-3">
-				<div>
-                    <div>
-                        <h3>Other</h3>
-                        <p>
-                            <ul class="media-list">
-                                <li class="media" ng-repeat="skill in skills.other">
-                                    {{skill}}
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
+                <div>
+                    <h3>Other</h3>
+                    <p>
+                        <ul class="media-list">
+                            <li class="media">
+                                Github/Git
+                                <div class="eighty"></div>
+                            </li>
+                            <li class="media">
+                                NPM/Bower/CDN
+                                <div class="fifty"></div>
+                            </li>
+                            <li class="media">
+                                Gulp
+                                <div class="fifty"></div>
+                            </li>
+                            <li class="media">
+                                WordPress
+                                <div class="forty"></div>
+                            </li>
+                            <li class="media">
+                                Ionic/Cordova
+                                <div class="twenty"></div>
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </div>
-        </div>
-
-
-        <div class="row row-content">
-
             <div class="col-xs-12 col-sm-3">
-
-                <p style="padding:20px;"></p>
-                <h3>
-                        <img class="media-object img-thumbnail center-block"
-                         ng-src={{samples.image}} alt="skill-image">
-                        </h3>
+                <div>
+                    <h3 >Concepts</h3>
+                    <p>
+                        <ul class="media-list">
+                            <li class="media">
+                                Single Page Applications
+                                <div class="seventy"></div>
+                            </li>
+                            <li class="media">
+                                Dynamic Data Binding
+                                <div class="seventy"></div>
+                            </li>
+                            <li class="media">
+                                MVC Design Pattern
+                                <div class="sixty"></div>
+                            </li>
+                            <li class="media">
+                                Asynchronous Programming
+                                <div class="thirty"></div>
+                            </li>
+                            <li class="media">
+                                MEAN Stack Development
+                                <div class="forty"></div>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
             </div>
+        <span style="float: right" class="label label-default">Updated: June 05th, 2017</span></div>
+
+
+
+        <div id="samplebackground" class="row row-content">
+
             <div class="col-xs-12 col-sm-3">
 				<div>
                     <div>
@@ -83,19 +142,8 @@
 
         </div>
 
-        <div class="row row-content">
+        <div id="credentialsbackground" class="row row-content">
 
-            <div class="col-xs-12 col-sm-3">
-
-                <!--ui-sref example with state params. on click will find-->
-                <!--<a ui-sref="app.dishdetails({id: 0})">-->
-
-                <p style="padding:20px;"></p>
-                <h2>
-                        <img class="media-object img-thumbnail center-block"
-                         ng-src={{credentials.image}} alt="skill-image">
-                        </h2>
-            </div>
             <div class="col-xs-12 col-sm-4">
 
                                 <img class="img-thumbnail" ng-src={{credentials.diploma}} alt="uoi-diploma"></a>
@@ -105,6 +153,9 @@
 
             <div class="col-xs-12 col-sm-4">
                 <img class="img-thumbnail" ng-src={{credentials.ddiploma}} alt="depaul-diploma"></a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <img class="img-thumbnail" ng-src={{credentials.cdiploma}} alt="coursera-diploma"></a>
             </div>
 
         </div>

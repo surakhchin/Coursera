@@ -8,9 +8,10 @@ angular.module('confusionApp')
 
             var skills = {
                 image: 'images/skills.png',
-                front: ['HTML5', 'CSS3', 'Photoshop', 'Bootstrap','jQuery', 'AngularJS'],
-                back: ['nodeJS','JSON-Server', 'RESTful API', 'MongoDB', 'Express','PowerShell'],
-                other: ['NPM','Karma/Jasmine','Bower','Gulp', 'Yo/Yeoman', 'WordPress', 'SourceTree' ],
+                front: ['HTML5', 'CSS3', 'Bootstrap','jQuery', 'AngularJS'],
+                back: ['PowerShell','MongoDB', 'Express', 'RESTful API', 'NodeJS'],
+                other: ['Github/Git','NPM/Bower/CDN','Gulp','WordPress', 'Ionic/Cordova'],
+                concepts: ['Dynamic Data Binding', 'Single Page Applications', 'MVC Design Pattern', 'Asynchronous Programming', 'MEAN Stack'],
                 list: ['html',
                         'css','Bootstrap','jQuery',
                         'javascript',
@@ -43,7 +44,8 @@ angular.module('confusionApp')
                 list: ['UoI Diploma', 'Depaul Diploma'],
                 title: 'Educational Credentials',
                 diploma: 'images/diploma.png',
-                ddiploma: 'images/ddiploma.png'
+                ddiploma: 'images/ddiploma.png',
+                cdiploma:  'images/cdiploma.png'
             };
 
             this.getCredentials = function () {
