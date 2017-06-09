@@ -2,65 +2,10 @@
 
 angular.module('confusionApp')
 
-	//---------------------------------------------------------------------------------
-			//NEW CODE 6/7/2017
-
-//-------------------------------------------------------------------------------------
-	.controller('SamplesController', ['$scope', 'demoFactory', function($scope, demoFactory) {
-
-
-
-            $scope.samples = demoFactory.getSamples();
-
-
-
-
-
-        }])
-
-	.controller('SampleDetailController', ['$scope', '$stateParams', 'demoFactory', '$window', function($scope, $stateParams, demoFactory, $window) {
-
-           $scope.sample = demoFactory.getSample(parseInt($stateParams.id,10));
-
-
-           	$scope.class = "media-top";
-            $scope.number = $window.innerWidth;
-
-            $scope.changeClass = function () {
-
-                if ($scope.number > 500) {
-                    $scope.class = "media-left media-middle";
-                    return $scope.class;
-                }
-                else {
-                    $scope.class = "media-top";
-                    return $scope.class;
-                }
-            };
-            $scope.changeClass();
-
-			$scope.showForm2 = false;
-
-			if ($scope.sample._id === 3) {
-
-				$scope.showForm2 = true;
-			}
-			else {
-				$scope.showForm2 = false;
-			}
-
-        }])
-
-
-	//---------------------------------------------------------------------------------
-			//ENDD
-
-//-------------------------------------------------------------------------------------
- 	    .controller('JumboController', ['$scope', function($scope) {
+	    .controller('JumboController', ['$scope', function($scope) {
 
             $scope.date = new Date();
         }])
-
 
 
         .controller('MenuController', ['$scope', 'demoFactory', '$window', function($scope, demoFactory, $window) {

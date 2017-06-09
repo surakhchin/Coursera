@@ -23,22 +23,26 @@ angular.module('confusionApp', ['ui.router'])
                 url:'/',
                 views: {
                     'header': {
-                        templateUrl : 'views/header.html'
+                        templateUrl : 'views/header.html',
                     },
                     'content': {
                         templateUrl : 'views/home.html',
                         controller  : 'JumboController'
                     },
                     'content2': {
-                        templateUrl : 'views/samples.html',
-                        controller  : 'SamplesController'
+                        templateUrl : 'views/home2.html',
+                        controller  : 'JumboController'
                     },
                     'content3': {
-                        templateUrl : 'views/creds.html',
+                        templateUrl : 'views/samples.html',
+                        controller  : 'JumboController'
+                    },
+                    'content4': {
+                        templateUrl : 'views/home3.html',
                         controller  : 'JumboController'
                     },
                     'footer': {
-                        templateUrl : 'views/footer.html'
+                        templateUrl : 'views/footer.html',
                     }
                 }
 
@@ -71,16 +75,7 @@ angular.module('confusionApp', ['ui.router'])
                     'content@': {
                         templateUrl : 'views/contactus.html',
                         controller  : 'ContactController'                  
-                    },
-                    'content2@': {
-                        templateUrl : '',
-                        controller  : ''
-                    },
-                    'content3@': {
-                        templateUrl : '',
-                        controller  : ''
                     }
-
                 }
             })
 
@@ -91,14 +86,6 @@ angular.module('confusionApp', ['ui.router'])
                     'content@': {
                         templateUrl : 'views/menu.html',
                         controller  : 'MenuController'
-                    },
-                    'content2@': {
-                        templateUrl : 'views/portfolio.html',
-                        controller  : 'JumboController'
-                    },
-                    'content3@': {
-                        templateUrl : '',
-                        controller  : ''
                     }
                 }
             })
@@ -116,24 +103,6 @@ angular.module('confusionApp', ['ui.router'])
             })
 
 
-            // route for the sampledetals page ***NEW: 6/7/2017
-            .state('app.sampledetails', {
-                url: 'samples/:id',
-                views: {
-                    'content@': {
-                        templateUrl : 'views/home.html',
-                        controller  : 'DishDetailController'
-                   },
-                    'content2@': {
-                        templateUrl : 'views/sampledetails.html',
-                        controller  : 'SamplesController'
-                    },
-                    'content3@': {
-                        templateUrl : 'views/creds.html',
-                        controller  : ''
-                    }
-                }
-            })
 
             // route for the dishdetail page
             .state('app.dishdetails', {
@@ -142,15 +111,7 @@ angular.module('confusionApp', ['ui.router'])
                     'content@': {
                         templateUrl : 'views/dishdetail.html',
                         controller  : 'DishDetailController'
-                   },
-                    'content2@': {
-                        templateUrl : 'views/portfolio.html',
-                        controller  : 'JumboController'
-                    },
-                    'content3@': {
-                        templateUrl : '',
-                        controller  : ''
-                    }
+                   }
                 }
             });
     

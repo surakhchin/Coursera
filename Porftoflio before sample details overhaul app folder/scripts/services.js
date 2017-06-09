@@ -29,6 +29,15 @@ angular.module('confusionApp')
                 return skills;
             };
 
+            var samples = {
+                image: 'images/sampleprojects.png',
+                list: ['Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
+                title: 'Sample Projects'
+            };
+
+            this.getSamples = function () {
+                return samples;
+            };
 
             var credentials = {
                 image: 'images/credentials.png',
@@ -52,63 +61,6 @@ angular.module('confusionApp')
 
             this.getGoals = function () {
                 return goals;
-            };
-//-----------------------------------------------------------------------------------------------------
-            //NEW CODE 6/7/2017
-
-
-
-var samples=[
-                         {
-                          _id:0,
-                          name:'Chicago',
-                          image: 'images/chicago.PNG',
-                          url: 'https://surakhchin.github.io/Chicago',
-                          date: '5/30/2016',
-                          description:'Single html page responsive static website built with Bootstrap, custom jQuery, CSS3, and HTML5 elements.'
-                        },
-                        {
-                          _id:1,
-                          name:'conFusion',
-                          image: 'images/confusion.PNG',
-                          url: 'https://surakhchin.github.io/conFusion',
-                          date: '2/30/2017',
-                          description:'Single Page Application build with AngularJS, Bootstrap, custom JavaScript and jQuery.'
-                        },
-                        {
-                          _id:2,
-                          name:'Budgets',
-                          image: 'images/budgets.PNG',
-                          url: 'https://surakhchin.github.io/budgets2',
-                          date: '5/30/2017',
-                          description:'Simple budgets app build for an open source project. This app pulls custom data from a RESTful API server. Supports GET, UPDATE, DELETE, ADD operations on the Campaign Budgets Object.'
-                        },
-                        {
-                          _id:3,
-                          name:'Form',
-                          image: 'images/form.PNG',
-                          url: 'https://surakhchin.github.io/form',
-                          date: '5/30/2017',
-                          description:'Sample forms made with HTML5, jQuery ajax, and custom JavaScript',
-                          url2: 'https://surakhchin.github.io/form2'
-                        }
-                        ];
-
-            var samples2 = {
-                image: 'images/sampleprojects.png',
-                list: ['Sample Assignments', 'Mr. Constant', 'Gunz Online' ],
-                title: 'Sample Projects'
-            };
-
-            this.getSamples = function () {
-                return samples;
-            };
-
-
-
-            this.getSample = function (index) {
-
-                return samples[index];
             };
 
 // ----------------------------------------------------------------------------------------------------

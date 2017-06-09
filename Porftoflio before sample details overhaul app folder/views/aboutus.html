@@ -1,0 +1,288 @@
+
+    <div class="container" ng-controller="AboutController">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">About Me</li>
+               </ul>
+            </div>
+            <div class="col-xs-12">
+               <h3>About Me</h3>
+               <hr>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-7 col-lg-8">
+                <h2>{{goals.title}}</h2>
+                <p style="padding: 10px"></p>
+                <p>
+                    <ul ng-repeat="goal in goals.list">
+                        <li>{{goal}}</li>
+                    </ul>
+                </p>
+                <p style="padding-bottom: 20px"></p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-lg-4">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Facts At a Glance</h3>
+                    </div>
+                    <div class="panel-body">
+                        <dl ng-class="class">
+                            <dt>Age:</dt>
+                            <dd>28</dd>
+                            <dt>Years Programming:</dt>
+                            <dd>3+</dd>
+                            <dt>Years Web Dev:</dt>
+                            <dd>2+</dd>
+                            <dt>Expert Field:</dt>
+                            <dd>Front-end</dd>
+                            <dt>Desired Position:</dt>
+                            <dd>Fullstack</dd>
+                            <dt>Favorite Tech:</dt>
+                            <dd>AngularJS</dd>
+                            <dt>Screen Width:</dt>
+                            <dd id="window-info"><small>{{number}}px</small></dd>
+                       </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-12">
+                <h2>Cover Letter</h2>
+               <ul class="media-list">
+                   <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
+                   <!--We changed ng-href to ui-sref to change the nested state app.dishdetails via UI-Router-->
+                    <li class="media">
+                        <div class="media-body">
+                            <h3 class="media-heading">Serge Urakhchin <small>Full Stack Web Developer</small></h3>
+                            <blockquote style="text-align: left" class="blockquote blockquote-reverse">{{goals.summary}}</blockquote>
+                            <!--<p>Comment: {{dish.comment}}</p>-->
+                            <!--<p>Type your comment:-->
+                             <!--<input type="text" ng-model="dish.comment"></p>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div>
+
+        <div  class="row row-content">
+            <section ng-controller="TimeController" class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events" style="width: 1800px;">
+				<ol style="list-style: none;">
+					<li><a href="#0" data-date="16/01/2014" class="selected ui-link" style="left: 120px;">Index</a></li>
+					<li><a href="#0" data-date="28/02/2014" class="ui-link" style="left: 300px;">Jun '14</a></li>
+					<li><a href="#0" data-date="20/04/2014" class="ui-link" style="left: 480px;">20 Mar</a></li>
+					<li><a href="#0" data-date="20/05/2014" class="ui-link" style="left: 600px;">20 May</a></li>
+					<li><a href="#0" data-date="09/07/2014" class="ui-link" style="left: 780px;">09 Jul</a></li>
+					<li><a href="#0" data-date="30/08/2014" class="ui-link" style="left: 960px;">30 Aug</a></li>
+					<li><a href="#0" data-date="15/09/2014" class="ui-link" style="left: 1020px;">15 Sep</a></li>
+					<li><a href="#0" data-date="01/11/2014" class="ui-link" style="left: 1200px;">01 Nov</a></li>
+					<li><a href="#0" data-date="10/12/2014" class="ui-link" style="left: 1380px;">10 Dec</a></li>
+					<li><a href="#0" data-date="19/01/2015" class="ui-link" style="left: 1500px;">29 Jan</a></li>
+					<li><a href="#0" data-date="03/03/2015" class="ui-link" style="left: 1680px;">3 Mar</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true" style="transform: scaleX(0.0780864);"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+
+		<ul style="list-style: none;" class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol style="list-style: none;">
+			<li class="selected" data-date="16/01/2014">
+				<h2>Programming Timeline</h2>
+				<em>{{date | date:"MMMM dd'th,' yyyy"}}</em>
+				<p>
+					This is a timeline of my programming career. You can navigate using the arrow keys or click on each date individually. Credit goes to <u><a href="https://codyhouse.co/gem/horizontal-timeline/">CodyHouse</a></u> for the jQuery, CSS, and HTML code used. With AngularJS a controller was created to host the jQuery code.
+				</p>
+			</li>
+
+			<li data-date="28/02/2014">
+				<h2>Discovery of MOOC Courses</h2>
+				<em>June 13th, 2014</em>
+				<p>
+					MOOC stands for Massive Online Open Courses. In the summer '14 I came across a post on r/learnprogramming titled "100+ programming courses you can start today for FREE". Up to that point it was my assumption was that the only way one could learn programming was to go to an accredited university and get a four year computer science degree. I was overwhelmed by the resources these MOOC courses provided, and this over exposure to material was something I struggled with for a while. In took me a about year of trying out different online courses to find a direction I was comfortable with.
+				</p>
+			</li>
+
+			<li data-date="20/04/2014">
+				<h2>Event title here</h2>
+				<em>March 20th, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/05/2014">
+				<h2>Event title here</h2>
+				<em>May 20th, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="09/07/2014">
+				<h2>Event title here</h2>
+				<em>July 9th, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="30/08/2014">
+				<h2>Event title here</h2>
+				<em>August 30th, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="15/09/2014">
+				<h2>Event title here</h2>
+				<em>September 15th, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="01/11/2014">
+				<h2>Event title here</h2>
+				<em>November 1st, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="10/12/2014">
+				<h2>Event title here</h2>
+				<em>December 10th, 2014</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="19/01/2015">
+				<h2>Event title here</h2>
+				<em>January 19th, 2015</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="03/03/2015">
+				<h2>Event title here</h2>
+				<em>March 3rd, 2015</em>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-9">
+                <h2>Facts &amp; Figures</h2>
+                <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <th>
+                            2015
+                        </th>
+                        <th>
+                            2016
+                        </th>
+                        <th>
+                            2017
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Github Repositories
+                        </th>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            6
+                        </td>
+                        <td>
+                            101
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <th>
+                            Github Commits
+                        </th>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            101
+                        </td>
+                        <td>
+                            128+
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <th>
+                            Significant Events
+                        </th>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            10
+                        </td>
+                        <td>
+                            15+
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <th>
+                            Fullstack Knowledge /10
+                        </th>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            6+
+                        </td>
+                    
+                    </tr>
+                </table>
+                </div>
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div> 
+    </div>
