@@ -1,3 +1,37 @@
+#gears{
+
+    background-image: url("../images/gears.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+}
+
+
+
+#timelinebackground {
+
+    background-image: url("../images/timeline.png");
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+#notebook {
+
+    background-image: url("../images/notebook.jpg");
+    background-repeat: no-repeat;
+
+}
+
+
+#goalsbackground {
+
+    background-image: url("../images/clipboard.jpg");
+    background-repeat: no-repeat;
+}
+
+
+
 .twenty {
     width: 20px;
     height: 10px;
