@@ -35,15 +35,16 @@
                         <div ng-class="class">
                             <a ng-href={{sample.url}}>
                             <img style="width: 150px" class="media-object img-thumbnail img-responsive"
-                             ng-src={{sample.image}} alt="Uthappizza"></a>
+                             ng-src={{sample.image}} alt="ProjectImg"></a>
                         </div>
                         <div class="media-right">
                             <h2 class="media-heading"><a ng-href={{sample.url}}>{{sample.name}}
-                            </a> <a ng-show="showForm2" ng-href={{sample.url2}}>Form2</a></h2>
+                            </a> <a ng-show="showForm2" ng-href={{sample.url2}}>Forms2</a></h2>
                             <p>{{sample.description}}</p>
                             <!--<p>Comment: {{dish.comment}}</p>-->
                             <!--<p>Type your comment:-->
                              <!--<input type="text" ng-model="dish.comment"></p>-->
+                            <span style="float: right">-{{sample.date}}</span>
                         </div>
                     </li>
                 </ul>

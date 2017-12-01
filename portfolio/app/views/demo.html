@@ -1,0 +1,60 @@
+<div id="demo"  class="container" xmlns:filter="http://www.w3.org/1999/xhtml">
+        <!--   HERE WE CHANGE NG-INIT INTO AN ARRAY OF JAVASCRIPT OBJECTS, an array of 4 different dishes to create
+        a menu list-->
+        <!--ATTACHING THE CONTROLLER: We delete ng-repeat and replace it with ng-controller. -->
+        <div class="row row-content" ng-controller="DemoController">
+            <div class="col-xs-12">
+
+                <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
+                     {{showDetails ? 'Hide Details':'Show Details'}}
+                </button>
+
+                <br><br>
+
+                <p><strong>Key Terms</strong> Sort By:<input type="text" ng-model="filtText"></p>
+
+                <br><br>
+
+                <ul class="nav nav-tabs">
+                   <!--ng-click will fire up the menuCtrl select function with given parameter -->
+                    <li ng-class="{active:isSelected(1)}">
+                    <a ng-click="select(1)"
+                    >All</a></li>
+                    <li ng-class="{active:isSelected(2)}">
+                    <a ng-click="select(2)"
+                    >HTML</a></li>
+                    <li ng-class="{active:isSelected(3)}">
+                    <a ng-click="select(3)"
+                    >CSS</a></li>
+                    <li ng-class="{active:isSelected(4)}">
+                    <a ng-click="select(4)"
+                    >JavaScript</a></li>
+                   <li ng-class="{active:isSelected(5)}">
+                    <a ng-click="select(5)"
+                    >Angular</a></li>
+               </ul>
+
+               <div class="tab-content">
+                   <ul class="media-list">
+                       <!--here we have to access the menuCtrl.dishes to get access to the dishes object-->
+                       <!--We changed ng-href to ui-sref to change the nested state app.dishdetails via UI-Router-->
+                        <li class="media" ng-repeat="dem in demo | filter:filtText">
+                            <!--<div ng-class="class">-->
+                                <!--<a ui-sref="app.demodetails({id: dem._id})">-->
+                                <!--<img class="media-object img-thumbnail"-->
+                                 <!--ng-src={{dem.image}} alt="Uthappizza">-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <div class="media-body">
+
+                                    <h2 class="media-heading">{{dem.name}}
+                                     <small><a ui-sref="app.demodetails({id: dem._id})"><span class="glyphicon glyphicon-menu-hamburger"></span></a></small>
+                                     <a ng-href={{dem.link}} target="_blank"><span class="badge">{{dem.info}}</span></a></h2>
+                                    <p ng-show="showDetails">{{dem.description}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>

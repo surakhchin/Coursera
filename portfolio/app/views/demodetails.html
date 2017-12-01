@@ -1,0 +1,120 @@
+
+    <div id="demodetailid" class="container" >
+        <div class="row row-content" ng-controller="DemoDetailController">
+            <button class="btn btn-xs btn-primary pull-right"
+                    type="button" ui-sref="app.demoid">
+                    Back to Demo
+                </button>
+            <div class="col-xs-12" >
+                <ul class="media-list">
+                       <!--here we have to access the demoCtrl.dishes to get access to the dishes object-->
+                    <li class="media">
+                        <div class="media-body">
+                            <h2 class="media-heading">{{dem.name}}
+                             <a ng-href={{dem.link}} target="_blank" ><span class="badge">{{dem.info}}</span></a></h2>
+                            <p>{{dem.description}}</p>
+                            <br>
+                            <a href="">
+                            <img class="img-thumbnail img-responsive"
+                             ng-src={{dem.image}} alt="demoimg" ui-sref="app.demoid">
+                            </a>
+                            <!--<p>Comment: {{dish.comment}}</p>-->
+                            <!--<p>Type your comment:-->
+                             <!--<input type="text" ng-model="dish.comment"></p>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br><br><br>
+            <button class="btn btn-xs btn-primary pull-right"
+                    type="button" ui-sref="app.demoid">
+                    Back to Demo
+                </button>
+
+             <div class="modal fade" id="demoModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{{dem.name}}</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-thumbnail" ng-src={{dem.image}} alt="depaul-diploma">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+            <!--<div class="col-xs-9 col-xs-offset-1">-->
+                <!--<p><strong>Customer Comments</strong> Sort By:<input type="text" ng-model="filtText"></p>-->
+                <!--<blockquote ng-repeat="comments in dish.comments | filter:filtText">-->
+                    <!--<p>{{comments.rating}} Stars</p>-->
+                    <!--<p>{{comments.comment}}</p>-->
+                    <!--<footer>-->
+                        <!--{{comments.author}}, {{comments.date | date}}-->
+                    <!--</footer>-->
+                <!--</blockquote>-->
+            <!--</div>-->
+            <!--<div class="col-xs-9 col-xs-offset-1" ng-controller="DishCommentController">-->
+                <!--<blockquote>-->
+                    <!--<p>{{comments.rating}} Stars</p>-->
+                    <!--<p>{{comments.comment}}</p>-->
+                    <!--<footer>-->
+                        <!--{{comments.author}}, {{comments.date | date}}-->
+                    <!--</footer>-->
+                <!--</blockquote>-->
+                <!--<ul class="list-unstyled">-->
+                    <!--<h3>Add a Comment</h3>-->
+                    <!--<p>Please enter in the required fields:</p>-->
+                <!--</ul>-->
+                <!--<form class="form-horizontal" name="commentForm"-->
+                		<!--ng-submit="submitComment()" novalidate>-->
+					<!--<div class="form-group" ng-class="{ 'has-error' : commentForm.author.$error.required && !commentForm.author.$pristine }">-->
+                        <!--<label for="author" class="col-sm-2 control-label">Your Name</label>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" id="author" name="author" placeholder="Enter Your Name"-->
+                        <!--ng-model="comments.author" required>-->
+                        <!--<span ng-show="commentForm.author.$error.required && !commentForm.author.$pristine" class="help-block">Your First name is required.</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label class="col-sm-2 control-label">Number of Stars</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<label class="radio-inline"><input  ng-model="comments.rating" type="radio" name="rating" value="1">1</label>-->
+                            <!--<label class="radio-inline"><input ng-model="comments.rating" type="radio" name="rating" value="2">2</label>-->
+                            <!--<label class="radio-inline"><input ng-model="comments.rating" type="radio" name="rating" value="3">3</label>-->
+                            <!--<label class="radio-inline"><input ng-model="comments.rating" type="radio" name="rating" value="4">4</label>-->
+                            <!--<label class="radio-inline"><input type="radio" ng-model="comments.rating" name="rating" value="5">5</label>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;??? NOTE: WE CANNOT USE NG-OPTIOINS WITH RADIO BUTTONS BECAUSE SELECT INPUTS ARE MUTUALLY EXCLUSIVE ???&ndash;&gt;-->
+                        <!--&lt;!&ndash;<select class="form-control"&ndash;&gt;-->
+                               <!--&lt;!&ndash;ng-model="feedback.mychannel"&ndash;&gt;-->
+                               <!--&lt;!&ndash;ng-options="channel.value as channel.label for channel in channels">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<option value="">Tel. or Email?</option>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</select>&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="form-group" ng-class="{ 'has-error' : commentForm.comment.$error.required && !commentForm.comment.$pristine }">-->
+                        <!--<label for="comment" class="col-sm-2 control-label">Your Comments</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<textarea class="form-control" id="comment" name="comment" rows="12" placeholder="Enter Your Comment"-->
+                                <!--ng-model="comments.comment" required>-->
+                            <!--</textarea>-->
+                            <!--<span ng-show="commentForm.comment.$error.required && !commentForm.comment.$pristine" class="help-block">Your Comment is required.</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<div class="col-sm-offset-2 col-sm-10">-->
+                            <!--<button type="submit" class="btn btn-primary" ng-disabled="commentForm.$invalid">Submit Comment</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+            </div>
+        </div>
+
+
+
